@@ -22,6 +22,10 @@ node_modules/
 tmp/
 .tmp/
 
+# Local-only launch and career material
+docs/RESUME-LINKEDIN.md
+docs/LAUNCH-CHECKLIST.md
+
 # User data and exports must never enter this repository
 *export*.json
 *backup*.json

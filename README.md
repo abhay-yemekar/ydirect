@@ -170,7 +170,6 @@ This diagram is intentionally architectural. The private production implementati
 | [FAQ](docs/FAQ.md) | Common product, account, backup, and licensing questions |
 | [Roadmap](ROADMAP.md) | Public direction without release-date promises |
 | [Media kit](docs/MEDIA-KIT.md) | Brand assets, product description, owner bio, and press facts |
-| [Resume and LinkedIn kit](docs/RESUME-LINKEDIN.md) | Ready-to-use project descriptions and launch copy |
 
 ## Public repo vs. private product repo
 

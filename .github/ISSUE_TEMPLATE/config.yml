@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: yDirect Support Center
+    url: https://inksl-ay.firebaseapp.com/support.html
+    about: Get help with accounts, sharing, shortcuts, backups, and imports or exports.
+  - name: Private security report
+    url: https://github.com/abhay-yemekar/ydirect/security/advisories/new
+    about: Report vulnerabilities privately. Do not publish security details in an issue.
+  - name: Privacy or account request
+    url: https://inksl-ay.firebaseapp.com/support.html#contact
+    about: Request account or data help without exposing personal information publicly.

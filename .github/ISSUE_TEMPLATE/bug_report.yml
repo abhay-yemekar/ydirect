@@ -1,0 +1,75 @@
+name: Product bug report
+description: Report a reproducible, non-sensitive yDirect behavior problem.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve yDirect. Remove email addresses, account details, snippet content, tokens, and private browser information before submitting. Security vulnerabilities belong in the private process described in SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: yDirect version
+      placeholder: e.g. 1.3.1
+    validations:
+      required: true
+  - type: input
+    id: chrome
+    attributes:
+      label: Chrome and operating system
+      placeholder: e.g. Chrome 140 on Windows 11
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where does it happen?
+      options:
+        - Popup
+        - Attached right-edge workspace
+        - Standalone extension page
+        - Account or legal/support web page
+        - Import, export, or backup
+        - Workspace or sharing
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use synthetic data and give the smallest reliable sequence.
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional safe context
+      description: Add redacted screenshots or non-sensitive details only.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I removed passwords, links used for authentication, tokens, personal data, and sensitive snippet content.
+          required: true
+        - label: This is not a security vulnerability or privacy incident.
+          required: true

@@ -1,0 +1,58 @@
+name: Feature request
+description: Describe a user problem and the outcome that would make yDirect better.
+title: "[Idea]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Strong product ideas begin with a clear problem, audience, and success condition. Please avoid sharing confidential workflows or real user content.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Explain the repeated-text workflow or friction without prescribing the implementation first.
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who experiences this problem most?
+      options:
+        - Customer support
+        - Sales or recruiting
+        - Founder or operations
+        - Developer or technical team
+        - Creator, writer, or student
+        - Small team or workspace manager
+        - General personal productivity
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: How do you handle it today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What would a successful outcome look like?
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Privacy, permission, or workflow trade-offs
+      description: Note any concern about page access, cloud data, sharing, exports, or complexity.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope confirmation
+      options:
+        - label: I checked the public roadmap and existing issues for this idea.
+          required: true
+        - label: This request does not include private data or a security vulnerability.
+          required: true

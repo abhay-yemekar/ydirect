@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If yDirect's public product documentation supports your work, please cite it using this metadata."
+title: "yDirect — Smart Snippet Manager"
+type: software
+version: 1.3.1
+abstract: "Public product documentation and showcase media for yDirect, a local-first Chrome snippet manager with optional backup and selective workspace sharing."
+authors:
+  - family-names: Yemekar
+    given-names: Abhay
+    email: abhay.yemekar@ydirect.tech
+    website: https://github.com/abhay-yemekar
+repository-code: https://github.com/abhay-yemekar/ydirect
+url: https://github.com/abhay-yemekar/ydirect
+license: CC-BY-4.0
+keywords:
+  - chrome-extension
+  - productivity
+  - snippet-manager
+  - browser-extension
+  - reusable-text
+  - product-management

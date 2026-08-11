@@ -1,0 +1,29 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor state
+.idea/
+.vscode/
+*.swp
+*.tmp
+
+# Private or generated local material
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.crx
+*.zip
+*.log
+node_modules/
+tmp/
+.tmp/
+
+# User data and exports must never enter this repository
+*export*.json
+*backup*.json
+*.xlsx
+*.csv

@@ -1,0 +1,30 @@
+name: Documentation improvement
+description: Report an inaccurate, unclear, inaccessible, or broken public document.
+title: "[Docs]: "
+labels:
+  - documentation
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page or file
+      placeholder: e.g. docs/INSTALLATION.md
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong or unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested correction
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Confirmation
+      options:
+        - label: This report contains no private product details, credentials, personal data, or sensitive snippet content.
+          required: true

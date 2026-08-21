@@ -11,8 +11,11 @@ This roadmap communicates product direction, not guaranteed dates. Priorities ma
 - [x] Verified-account workspace roles and selective folder/snippet sharing
 - [x] Public privacy, terms, support, uninstall, and changelog pages
 - [x] Chrome Web Store submission for version `1.3.1`
-- [ ] Chrome Web Store approval and owner-controlled public publishing
-- [ ] Post-launch feedback triage and onboarding refinements
+- [x] Chrome Web Store approval and public publishing for version `1.3.1`
+- [x] Native side-panel compatibility update and 60-service reachability audit for `1.3.2`
+- [x] Clean-profile, multi-account, export, backup, sharing, and transactional-email acceptance for `1.3.2`
+- [ ] Submit version `1.3.2` to the existing Store listing and complete review/publishing
+- [ ] Continue post-launch feedback triage and onboarding refinements
 
 ## Next — confidence and usability
 
@@ -44,7 +47,7 @@ This roadmap communicates product direction, not guaranteed dates. Priorities ma
 - Advertising or selling user data
 - Automatic reading of page contents or browsing history
 - Persistent access to every website
-- Paid subscriptions or in-product payments in version `1.3.1`
+- Paid subscriptions or in-product payments in the current `1.3.x` release line
 
 ## Influence the roadmap
 

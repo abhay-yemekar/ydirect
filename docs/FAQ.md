@@ -6,7 +6,7 @@ yDirect is a Chrome snippet manager for saving, organizing, searching, copying, 
 
 ## Is yDirect free?
 
-Yes. Version `1.3.1` has no subscriptions, payments, advertising, or paid features.
+Yes. The current `1.3.x` release line has no subscriptions, payments, advertising, or paid features.
 
 ## Is yDirect open source?
 
@@ -18,11 +18,15 @@ It provides a durable, transparent place for product documentation, architecture
 
 ## When can I install it?
 
-Version `1.3.1` was submitted to the Chrome Web Store on August 11, 2026. The public install link will appear in the README after approval and final owner-controlled publishing.
+Version `1.3.1` is available now from the [official Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-%E2%80%94-smart-snippet-m/ehkahipeoahnbfbahlkedgdcjefejihg). Version `1.3.2` is release-ready and will update the same listing after Store submission and review.
 
 ## Does yDirect read every webpage?
 
-No. The attached workspace is inserted only after the user clicks yDirect or invokes its shortcut on the active page. The extension does not request a persistent all-sites content script.
+No. The workspace runs in Chrome's native side panel and is not embedded into the website. The extension does not request a persistent all-sites content script. Temporary `activeTab` and `scripting` access is used only after a user gesture to install or health-check the optional floating shortcut on supported pages.
+
+## Why did version 1.3.2 move to Chrome's native side panel?
+
+The native side panel is browser-owned and is not subject to a website's iframe, CSS, Trusted Types, or Content Security Policy rules. This gives yDirect a consistent surface across ordinary and restrictive websites while keeping the current page visible.
 
 ## Does yDirect collect browsing history?
 

@@ -8,7 +8,7 @@
 
 **Category:** Chrome productivity extension / reusable-text workspace
 
-**Current release:** `1.3.1`, free, submitted for Chrome Web Store review on August 11, 2026
+**Availability:** `1.3.1` is published and free; `1.3.2` is release-ready for the same Chrome Web Store listing
 
 ## The problem
 
@@ -23,7 +23,7 @@ That creates four recurring costs:
 
 ## The product idea
 
-yDirect keeps reusable text in a compact workspace attached to the right edge of the page already in use. The user explicitly opens the workspace from the Chrome toolbar or a keyboard shortcut, searches or browses, and copies the needed snippet.
+yDirect keeps reusable text in a compact workspace in Chrome's native side panel. The user explicitly opens it from the Chrome toolbar, `Alt+S`, or the optional page shortcut, searches or browses, and copies the needed snippet.
 
 The product is intentionally a **snippet manager**, not an automatic page reader, password vault, browsing-history tool, or background text collector.
 
@@ -81,7 +81,7 @@ Prompts, captions, citations, research notes, frequently used links, and repeate
 
 ## Differentiation
 
-yDirect combines a compact, on-demand attached workspace with local-first storage, explicit portability, optional recovery, and scoped collaboration. It does not require persistent access to every website to provide its primary copy workflow.
+yDirect combines a compact, on-demand native side panel with local-first storage, explicit portability, optional recovery, and scoped collaboration. It does not require persistent access to every website to provide its primary copy workflow.
 
 The product emphasizes **deliberate access** and **selective sharing** over automatic content capture.
 
@@ -98,7 +98,7 @@ The product emphasizes **deliberate access** and **selective sharing** over auto
 
 ## Current scope
 
-Version `1.3.1` includes snippet organization, copy workflows, local account separation, imports/exports, optional cloud backup, verified-account workspaces, scoped sharing, themes, accessible dialogs, account management, and public support/legal pages.
+Version `1.3.2` retains snippet organization, copy workflows, local account separation, imports/exports, optional cloud backup, verified-account workspaces, scoped sharing, themes, accessible dialogs, account management, and public support/legal pages while moving the main workspace to Chrome's native side panel and improving sign-in and transactional-email reliability.
 
 It has no subscriptions, payments, advertising, or paid features.
 

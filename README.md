@@ -3,8 +3,9 @@
 ![yDirect — Save once. Reuse in seconds.](assets/brand/hero-banner.png)
 
 <p align="center">
-  <a href="#installation"><img alt="Chrome Web Store review pending" src="https://img.shields.io/badge/Chrome_Web_Store-review_pending-F59E0B?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
-  <img alt="yDirect version 1.3.1" src="https://img.shields.io/badge/version-1.3.1-2563EB?style=for-the-badge">
+  <a href="https://chromewebstore.google.com/detail/ydirect-%E2%80%94-smart-snippet-m/ehkahipeoahnbfbahlkedgdcjefejihg"><img alt="Available on the Chrome Web Store" src="https://img.shields.io/badge/Chrome_Web_Store-available-0F9D58?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
+  <img alt="Published version 1.3.1" src="https://img.shields.io/badge/published-1.3.1-2563EB?style=for-the-badge">
+  <img alt="Next update 1.3.2 release-ready" src="https://img.shields.io/badge/next-1.3.2_release--ready-7C3AED?style=for-the-badge">
   <img alt="Free product" src="https://img.shields.io/badge/price-free-0F766E?style=for-the-badge">
   <img alt="Private source code" src="https://img.shields.io/badge/source-private-334155?style=for-the-badge&logo=github">
   <a href="LICENSE"><img alt="Documentation and media licensed CC BY 4.0" src="https://img.shields.io/badge/docs_&_media-CC_BY_4.0-8B5CF6?style=for-the-badge"></a>
@@ -32,7 +33,7 @@
 
 The same replies, prompts, links, explanations, and templates get typed again and again. Keeping them in scattered notes makes them slow to find, difficult to share safely, and easy to lose.
 
-yDirect turns that repeated text into a small, on-demand workspace attached to the right edge of the page you are already using. Open it only when needed, find the right snippet, copy it, and continue working without changing tabs.
+yDirect turns that repeated text into a small, on-demand workspace in Chrome's native side panel. Open it only when needed, find the right snippet, copy it, and continue working without changing tabs.
 
 | What | Why | How | Who |
 | --- | --- | --- | --- |
@@ -47,7 +48,7 @@ yDirect turns that repeated text into a small, on-demand workspace attached to t
   <a href="docs/FEATURES.md">Explore every feature</a>
 </p>
 
-![yDirect attached right-edge workspace with safe sample data](assets/screenshots/attached-workspace.png)
+![yDirect in Chrome's native side panel with safe sample data](assets/screenshots/native-side-panel.png)
 
 ## Features
 
@@ -62,7 +63,7 @@ yDirect turns that repeated text into a small, on-demand workspace attached to t
 | 🔐 | Portable backups | Import and export JSON, passphrase-encrypted JSON, and Excel workbooks. |
 | 🤝 | Selective collaboration | Share only chosen folders or snippets with verified yDirect accounts. |
 | 🌓 | Comfortable UI | Light and dark themes with keyboard-accessible dialogs. |
-| 🧭 | On-demand page access | The attached workspace is inserted only after a toolbar click or shortcut. |
+| 🧭 | Native side panel | Toolbar, `Alt+S`, and the optional page shortcut open the same browser-owned panel. |
 
 See [Features](docs/FEATURES.md) for behavior, limits, roles, and safety notes.
 
@@ -87,21 +88,23 @@ flowchart LR
     B --> G["Share selected resources"]
 ```
 
-The browser page never receives your library. The workspace runs in an extension-owned frame and page access is requested only after your gesture. Read the [privacy and permissions explanation](docs/PRIVACY-AND-PERMISSIONS.md) for the exact model.
+The browser page never receives your library. The workspace runs in Chrome's native side panel. Temporary active-page access is used only to install or health-check the optional floating shortcut after your gesture. Read the [privacy and permissions explanation](docs/PRIVACY-AND-PERMISSIONS.md) for the exact model.
 
 ## Installation
 
 ### Chrome Web Store
 
-yDirect `1.3.1` was submitted for Chrome Web Store review on **August 11, 2026** with manual publishing selected. The public install button will be added here as soon as the review is approved and the owner completes the final launch check.
+yDirect `1.3.1` is available from the official [Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-%E2%80%94-smart-snippet-m/ehkahipeoahnbfbahlkedgdcjefejihg). Version `1.3.2` is release-ready and will update the same listing after Store submission and review.
 
-When published:
+To install:
 
-1. Open the yDirect Chrome Web Store listing and choose **Add to Chrome**.
+1. Open the [official yDirect listing](https://chromewebstore.google.com/detail/ydirect-%E2%80%94-smart-snippet-m/ehkahipeoahnbfbahlkedgdcjefejihg) and choose **Add to Chrome**.
 2. Pin yDirect from Chrome's Extensions menu.
-3. Open a normal `http://` or `https://` page and click the yDirect icon, or press `Alt+S`.
+3. Click the yDirect icon or press `Alt+S` to open the native side panel.
 4. Register with email or continue with Google, then verify the account if prompted.
 5. Create a folder and your first snippet. Use the copy button or press `Alt+C` to copy the last-used snippet.
+
+In the `1.3.2` update, the optional draggable shortcut on supported `http://` and `https://` pages opens that same native side panel. Chrome-protected pages do not show the shortcut by design.
 
 No unsigned package or private-source installation is distributed from this public repository. See [Installation](docs/INSTALLATION.md) for supported-page behavior and troubleshooting.
 
@@ -150,9 +153,10 @@ This diagram is intentionally architectural. The private production implementati
 
 | Item | Status |
 | --- | --- |
-| Current version | `1.3.1` |
+| Published version | `1.3.1` |
+| Next update | `1.3.2` release-ready; Store submission/review remains |
 | Price | Free; no subscriptions, payments, or paid features in this release |
-| Chrome Web Store | Submitted August 11, 2026; review pending; manual publishing selected |
+| Chrome Web Store | [Available now](https://chromewebstore.google.com/detail/ydirect-%E2%80%94-smart-snippet-m/ehkahipeoahnbfbahlkedgdcjefejihg) |
 | Permanent item ID | `ehkahipeoahnbfbahlkedgdcjefejihg` |
 | Source code | Private and proprietary |
 | Public documentation | Available in this repository |

@@ -12,7 +12,7 @@ body:
     id: version
     attributes:
       label: yDirect version
-      placeholder: e.g. 1.3.1
+      placeholder: e.g. 1.3.1 or 1.3.2
     validations:
       required: true
   - type: input
@@ -28,8 +28,9 @@ body:
       label: Where does it happen?
       options:
         - Popup
-        - Attached right-edge workspace
-        - Standalone extension page
+        - Native Chrome side panel
+        - Toolbar or keyboard shortcut
+        - Optional floating page shortcut
         - Account or legal/support web page
         - Import, export, or backup
         - Workspace or sharing

@@ -1,6 +1,6 @@
 # Feature guide
 
-This guide describes user-visible behavior in yDirect `1.3.1`. It avoids private implementation details and does not promise unreleased roadmap items.
+This guide describes user-visible behavior in the release-ready yDirect `1.3.2` update. Version `1.3.1` remains available in the Chrome Web Store until the update completes review and publishing.
 
 ## Snippet library
 
@@ -14,15 +14,16 @@ This guide describes user-visible behavior in yDirect `1.3.1`. It avoids private
 
 Masking changes what is visible on screen. It does not encrypt the stored content and must not be treated as protection for high-risk secrets.
 
-## Attached workspace
+## Native side panel
 
 - Open yDirect from the Chrome toolbar or `Alt+S`.
-- Attach the workspace to the right edge of a normal `http://` or `https://` page.
+- Use the responsive workspace in Chrome's browser-owned native side panel.
 - Keep the current page visible while browsing the library.
-- Use a standalone extension page when Chrome does not allow injection into a restricted page.
-- Move or remove the optional floating shortcut and restore it from the toolbar.
+- On supported `http://` and `https://` pages, use the optional draggable shortcut to open the same side panel.
+- Move or remove the optional shortcut and restore it from the toolbar.
+- On Chrome-protected pages, use the toolbar or `Alt+S` wherever Chrome permits the native side panel; the floating shortcut is absent by design.
 
-yDirect does not request persistent access to every website. Access to the active page follows the user's toolbar click or shortcut.
+The application is not embedded in the website DOM, so site CSS, iframe rules, Trusted Types policies, and website Content Security Policy cannot resize or block the yDirect application surface. yDirect does not request persistent access to every website.
 
 ## Accounts and local state
 
@@ -80,7 +81,7 @@ Every account has a personal/home workspace and may participate in other workspa
 
 - Light and dark themes.
 - Keyboard-accessible dialogs with focus movement, trapping, Escape dismissal, and restoration.
-- Narrow layouts designed for popup and attached-panel widths.
+- Narrow layouts designed for popup and native side-panel widths.
 - Long content wraps rather than relying on horizontal scrolling.
 
 ## Support and legal surfaces

@@ -1,6 +1,6 @@
 # Architecture overview
 
-This document explains the public system design for yDirect `1.3.1`. It intentionally omits production source code, deployment secrets, internal identifiers beyond the public Chrome Web Store item ID, private runbooks, and exploitable control details.
+This document explains the public system design for the release-ready yDirect `1.3.2` update. It intentionally omits production source code, deployment secrets, internal identifiers beyond the public Chrome Web Store item ID, private runbooks, and exploitable control details.
 
 ## System view
 
@@ -8,7 +8,7 @@ This document explains the public system design for yDirect `1.3.1`. It intentio
 flowchart TB
     subgraph Browser["Google Chrome"]
         T["Toolbar / keyboard shortcut"] --> M["Manifest V3 extension"]
-        M --> P["Extension-owned attached workspace"]
+        M --> P["Chrome native side panel"]
         M --> S["Account-separated local storage"]
     end
 
@@ -26,18 +26,18 @@ The production client is a Chrome Manifest V3 extension.
 
 Responsibilities:
 
-- render the popup and attached workspace;
+- render the popup and native side-panel workspace;
 - manage folders, snippets, search, sorting, themes, and copy actions;
 - keep account-separated state in Chrome local storage;
 - create and validate imports/exports;
 - request authentication and authenticated cloud operations;
-- attach the workspace to the active page only after a user gesture.
+- install or health-check the optional floating shortcut on the active supported page only after a user gesture.
 
-The attached panel runs in an extension-owned frame. The host page is not given the user's library.
+The application runs in Chrome's browser-owned native side panel, not inside the website DOM. The host page is not given the user's library.
 
 ## Identity layer
 
-Firebase Authentication provides email/password accounts and the verified identity used by cloud features. Google OAuth is available when a user deliberately chooses Google sign-in.
+Firebase Authentication provides email/password accounts and the verified identity used by cloud features. Version `1.3.2` uses a Manifest V3-compatible Google account chooser and hosted callback helper without requesting Chrome's `identity` permission.
 
 Cloud backup, sharing, feedback, and account operations require authenticated requests. Protected collaboration actions require a verified email identity.
 
@@ -59,7 +59,7 @@ Authorization, payload limits, workspace scope, resource grants, revisions, and 
 - Resend delivers transactional messages such as collaboration notifications and account-operation confirmations.
 - `ydirect.tech` public addresses are routed through Cloudflare Email Routing.
 
-Marketing email is not part of version `1.3.1`.
+Marketing email is not part of the current `1.3.x` release line.
 
 ## Data flow examples
 
@@ -91,7 +91,7 @@ Marketing email is not part of version `1.3.1`.
 
 | Boundary | Design intent |
 | --- | --- |
-| Host webpage ↔ extension frame | Keep the library in the extension context; do not disclose it to the page |
+| Host webpage ↔ native side panel | Keep the library in the extension context; do not disclose it to the page |
 | Extension ↔ backend | Authenticated HTTPS to the yDirect Firebase Functions origin |
 | Client UI ↔ authorization | Treat UI state as convenience; enforce cloud permissions on the server |
 | Local data ↔ account | Separate browser-local state by signed-in account |
@@ -103,7 +103,9 @@ Marketing email is not part of version `1.3.1`.
 | Choice | Reason |
 | --- | --- |
 | Chrome Manifest V3 | Current Chrome extension platform and event-driven service-worker lifecycle |
-| `activeTab` + `scripting` | User-triggered page attachment without persistent access to all sites |
+| `sidePanel` | Browser-owned workspace surface that stays separate from website DOM and policy rules |
+| `activeTab` + `scripting` | Install or health-check only the optional shortcut on a user-activated supported page |
+| `offscreen` | Support the user-initiated Manifest V3 Google sign-in flow without Chrome's `identity` permission |
 | Chrome local storage | Fast local-first snippet access |
 | Firebase Authentication | Email and Google identity with verified-account workflows |
 | Firebase Functions | Authenticated, server-enforced product operations |

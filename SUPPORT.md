@@ -4,13 +4,13 @@
 
 Start with the public [yDirect Support Center](https://inksl-ay.firebaseapp.com/support.html) for account access, verification, workspace sharing, shortcuts, backup, import/export, and safe troubleshooting.
 
-If the issue remains, email [support@ydirect.tech](mailto:support@ydirect.tech?subject=yDirect%20Support%20Request).
+If the issue remains, email [support@ydirect.tech](mailto:support@ydirect.tech?subject=yDirect%20Support%20Request). We aim to respond within two business days.
 
 ## What to include
 
 - yDirect version;
 - Chrome version and operating system;
-- whether the issue occurs in the popup, attached workspace, or both;
+- whether the issue occurs in the popup, native side panel, toolbar, floating shortcut, or hosted account page;
 - clear steps to reproduce;
 - expected and actual behavior;
 - an edited screenshot or short recording with personal and snippet information hidden.

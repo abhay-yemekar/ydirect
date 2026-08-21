@@ -20,20 +20,21 @@ yDirect is a smart Chrome snippet manager that keeps reusable text organized, se
 
 ### Short description
 
-yDirect helps people save, organize, find, copy, back up, export, and selectively share frequently reused text without leaving the page they are working on. Its attached Chrome workspace opens on demand from the toolbar or a keyboard shortcut.
+yDirect helps people save, organize, find, copy, back up, export, and selectively share frequently reused text without leaving the page they are working on. Its native Chrome side panel opens on demand from the toolbar, `Alt+S`, or an optional page shortcut.
 
 ### Full description
 
-yDirect is a local-first smart snippet manager for Chrome. It gives support, sales, recruiting, development, operations, writing, and study workflows a focused place for reusable text. Users can organize snippets in folders, search and copy quickly, create portable JSON or Excel exports, enable optional limited cloud backup, and selectively share folders or snippets with verified accounts. The workspace attaches to the active page only after a user gesture; yDirect does not request persistent access to every website.
+yDirect is a local-first smart snippet manager for Chrome. It gives support, sales, recruiting, development, operations, writing, and study workflows a focused place for reusable text. Users can organize snippets in folders, search and copy quickly, create portable JSON or Excel exports, enable optional limited cloud backup, and selectively share folders or snippets with verified accounts. The workspace runs in Chrome's native side panel; temporary page access is limited to the optional user-invoked shortcut, and yDirect does not request persistent access to every website.
 
 ## Public fact sheet
 
 | Fact | Detail |
 | --- | --- |
-| Version | `1.3.1` |
+| Published version | `1.3.1` |
+| Next update | `1.3.2` release-ready |
 | Price | Free; no subscriptions or payments in this release |
 | Platform | Google Chrome, Manifest V3 |
-| Store status | Submitted August 11, 2026; review pending; manual publishing selected |
+| Store status | [Available on the Chrome Web Store](https://chromewebstore.google.com/detail/ydirect-%E2%80%94-smart-snippet-m/ehkahipeoahnbfbahlkedgdcjefejihg) |
 | Permanent item ID | `ehkahipeoahnbfbahlkedgdcjefejihg` |
 | Source availability | Private and proprietary |
 | Public repository | `github.com/abhay-yemekar/ydirect` |
@@ -59,7 +60,7 @@ Abhay Yemekar designed and built yDirect end to end—from product requirements 
 | Social preview | [`assets/brand/social-preview.png`](../assets/brand/social-preview.png) | GitHub social preview and link cards |
 | Product icon | [`assets/brand/ydirect-icon-128.png`](../assets/brand/ydirect-icon-128.png) | Small product identity use |
 | Product logo | [`assets/brand/ydirect-logo.png`](../assets/brand/ydirect-logo.png) | Larger identity use |
-| Product screenshot | [`assets/screenshots/attached-workspace.png`](../assets/screenshots/attached-workspace.png) | Product UI coverage |
+| Product screenshot | [`assets/screenshots/native-side-panel.png`](../assets/screenshots/native-side-panel.png) | Native side-panel product coverage |
 | Product tour GIF | [`assets/demo/ydirect-demo.gif`](../assets/demo/ydirect-demo.gif) | GitHub, posts, and quick previews |
 | Product tour video | [`assets/demo/ydirect-product-tour.webm`](../assets/demo/ydirect-product-tour.webm) | Portfolio and social upload source |
 

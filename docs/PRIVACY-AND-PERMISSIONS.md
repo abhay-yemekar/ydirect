@@ -8,7 +8,7 @@ yDirect is local-first for ordinary snippet work and uses cloud services only fo
 
 The extension does not sell user data, use it for personalized advertising, collect browsing history, or request persistent permission to read every website.
 
-The attached workspace is inserted only after the user clicks yDirect or invokes its shortcut on the active page.
+The yDirect workspace runs in Chrome's native side panel and opens only after the user clicks yDirect, invokes `Alt+S`, or uses the optional page shortcut.
 
 ## Data categories used by product features
 
@@ -32,8 +32,9 @@ Do not store passwords, one-time codes, private keys, recovery codes, payment-ca
 | `downloads` | Saves a file after the user selects Export JSON, Encrypted JSON, or Export Excel | yDirect does not read, monitor, open, or modify existing downloads |
 | `clipboardWrite` | Copies a selected snippet or the last-used snippet after the user invokes the action | It does not read clipboard history |
 | `activeTab` | Temporarily grants access to the active tab after a yDirect toolbar click or shortcut | It is not permanent access to every website |
-| `scripting` | Inserts the user-requested right-edge workspace into that active tab | There is no persistent all-sites content script |
-| `identity` | Starts Google OAuth when the user chooses Google sign-in and clears cached identity at sign-out | It does not silently sign in to other sites |
+| `scripting` | Installs or health-checks only the optional draggable shortcut on the user-activated HTTP/HTTPS tab | The application itself uses the native side panel; there is no persistent all-sites content script |
+| `sidePanel` | Opens the responsive yDirect workspace in Chrome's browser-owned side panel after a user action | It does not expose the snippet library to the active website |
+| `offscreen` | Supports the user-initiated Google account chooser required by the Manifest V3 authentication flow | yDirect does not request Chrome's `identity` permission |
 | `alarms` | Schedules optional automatic cloud backups at the frequency selected by the user | Automatic backup defaults to off |
 | yDirect Functions origin | Sends authenticated account, workspace, sharing, feedback, and backup requests to the product backend | It is not general access to arbitrary internet hosts |
 

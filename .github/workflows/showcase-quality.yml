@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Verify showcase boundary and local links
         shell: pwsh
@@ -111,6 +111,7 @@ jobs:
           }
 
           $trailingWhitespace = @(git grep -n -I -E '[[:blank:]]+$' -- '*.md' '*.yml' '*.yaml' '*.cff' 2>$null)
+          $global:LASTEXITCODE = 0
           if ($trailingWhitespace) {
             throw "Trailing whitespace found:`n$($trailingWhitespace -join "`n")"
           }

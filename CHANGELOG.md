@@ -2,9 +2,25 @@
 
 This public changelog summarizes user-visible product milestones. It does not expose private implementation details or replace the release history in the private source repository.
 
-## 1.3.2 — release-ready August 21, 2026
+## 1.3.3 — published September 8, 2026
 
-Compatibility and reliability update prepared for the existing Chrome Web Store listing. Version `1.3.1` remains the published version until `1.3.2` completes Store submission, review, and publishing.
+Reliability, clarity, and Store-presentation update published through yDirect's permanent Chrome Web Store listing.
+
+### Highlights
+
+- Improved returning-user startup while revalidating cached account consent in the background.
+- Fixed delayed Firebase authentication loading in the Manifest V3 service worker, including automatic-backup wake-up paths.
+- Made workspace saves and retries conflict-safe while preserving genuine conflicts for reconciliation.
+- Waited for sharing confirmation before closing and refreshed shared content in visible panels.
+- Made Profile, About, Feedback, and Settings panels more compact.
+- Clarified sign-in-method status, made the sign-in email read-only, corrected account/settings icons, and removed decorative bounce effects.
+- Refined the Store title and summary around saving, searching, and copying reusable text.
+- Published a new five-image Store gallery and refreshed public demo media.
+- Added no new Chrome permissions.
+
+## 1.3.2 — published August 2026
+
+Compatibility and reliability update published to the existing Chrome Web Store listing.
 
 ### Highlights
 
@@ -13,7 +29,7 @@ Compatibility and reliability update prepared for the existing Chrome Web Store 
 - Removed the site-specific iframe dependency that could be blocked by restrictive website policies.
 - Added a Manifest V3-compatible Google account chooser without requesting Chrome's `identity` permission.
 - Improved Google sign-in diagnostics and hosted-helper security controls.
-- Improved the accuracy and reliability of verification, account, invitation, sharing, and support email status.
+- Improved verification, account, invitation, sharing, and support-email status handling.
 
 ## 1.3.1 — published August 12, 2026
 
@@ -22,12 +38,11 @@ Maintenance release published through the permanent Chrome Web Store listing.
 ### Highlights
 
 - Made JSON, encrypted JSON, and Excel downloads more reliable through Chrome's native download flow.
-- Preserved the on-demand active-tab access model for the attached workspace.
+- Preserved the on-demand active-tab access model for the workspace.
 - Added feedback submission and support-mail delivery.
 - Added workspace invitations and notifications for newly shared folders and snippets.
-- Completed final Store identity and OAuth binding for the permanent extension ID.
-- Refined release documentation and policy disclosures for the download permission.
-- Revalidated automated data, workspace, UI, lifecycle, permission, and policy checks.
+- Completed Store identity and OAuth binding for the permanent extension ID.
+- Refined release documentation and permission-policy disclosures.
 
 ## 1.3.0 — first release candidate
 
@@ -43,4 +58,4 @@ Maintenance release published through the permanent Chrome Web Store listing.
 
 ## Status note
 
-The Chrome Web Store publication status shown in this repository is updated manually. Refer to the project README for the current public status.
+Chrome Web Store publication status in this repository is maintained manually. The [project README](README.md) records the current public version.

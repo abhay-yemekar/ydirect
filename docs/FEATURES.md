@@ -1,18 +1,18 @@
 # Feature guide
 
-This guide describes user-visible behavior in the release-ready yDirect `1.3.2` update. Version `1.3.1` remains available in the Chrome Web Store until the update completes review and publishing.
+This guide describes user-visible behavior in yDirect `1.3.3`, published September 8, 2026.
 
 ## Snippet library
 
 - Create, edit, move, and delete folders and snippets within the user's access level.
 - Switch between folder and list views.
-- Search by the user-visible snippet information available to the signed-in library.
-- Sort content and use timestamps/copy counts as lightweight context.
+- Search the signed-in library and sort content.
+- Use timestamps and copy counts as lightweight context.
 - Copy a selected snippet with one action.
-- Copy the last-used snippet with the `Alt+C` keyboard shortcut.
+- Copy the last-used snippet again with `Alt+C`.
 - Optionally mask displayed snippet values to reduce casual shoulder-surfing.
 
-Masking changes what is visible on screen. It does not encrypt the stored content and must not be treated as protection for high-risk secrets.
+Masking changes what is visible on screen. It does not encrypt stored content and must not be treated as protection for high-risk secrets.
 
 ## Native side panel
 
@@ -27,28 +27,33 @@ The application is not embedded in the website DOM, so site CSS, iframe rules, T
 
 ## Accounts and local state
 
-- Register with email and password or continue with Google.
+- Continue with Google or register with email/password.
 - Verify an email account before protected cloud/workspace actions.
+- Review connected sign-in methods and password status in a compact Profile view.
+- Keep the sign-in email read-only in the current release.
 - Keep local library state separated by signed-in account.
-- Sign out, clear browser-local data, or request account deletion from settings.
+- Sign out, clear browser-local data, or request account deletion from Settings.
 - Use generic account messages designed to avoid revealing whether another account exists.
+
+Returning users can open their account-separated local copy while cached consent is revalidated in the background. New legal-document versions still require fresh acceptance.
 
 ## Import and export
 
 | Format | Primary use |
 | --- | --- |
 | JSON | Restorable yDirect backup and transfer |
-| Passphrase-encrypted JSON | Portable backup when a user wants file-level passphrase protection |
+| Passphrase-encrypted JSON | Portable backup with user-controlled file-level protection |
 | Excel | Human-readable review and editing in spreadsheet tools |
 
 Exports start only after a user selects an export action. yDirect does not read, monitor, open, or modify existing downloads.
 
-Before any destructive import or account operation, keep a verified export of content that cannot be replaced.
+Before a destructive import or account operation, keep a verified export of content that cannot be replaced.
 
 ## Optional cloud backup
 
-- Cloud backup is a deliberate, authenticated feature.
+- Cloud backup is a deliberate, authenticated feature and separate from workspace storage.
 - Automatic backup defaults to off.
+- The Manifest V3 background worker can initialize authentication when a scheduled backup wakes it.
 - A successful backup is read back and checked for integrity.
 - The service keeps the latest successful backup and one previous recovery point.
 - Restore is a recovery convenience, not an archival or disaster-recovery guarantee.
@@ -67,22 +72,27 @@ Every account has a personal/home workspace and may participate in other workspa
 | **Core Member** | Organize workspace content | Share folders/snippets and revoke resource access | Add Members; cannot add another Core Member or transfer ownership in this release |
 | **Member** | View explicitly shared resources; add to directly shared folders; edit/delete only their own contributions | Share content from their own workspace; cannot re-share another person's protected content | May remove their own access |
 
-### Sharing rules
+### Sharing behavior
 
 - A direct folder grant includes the folder and its current/future snippets, except resources the recipient explicitly removed.
 - A direct snippet grant includes that snippet plus a context-only folder shell.
 - A context-only folder does not allow contributions.
 - A Member may contribute only inside a directly shared folder.
-- A Member's contribution records its creator and remains editable/deletable by that creator and workspace managers.
+- A contribution records its creator and remains editable/deletable by that creator and workspace managers.
 - Removing access removes the recipient's future view; it does not delete the owner's content.
-- Cloud access is enforced by authenticated backend checks, not only by the interface.
+- The sharing dialog waits for server confirmation and keeps failures visible for retry.
+- Visible shared-content panels refresh periodically and after focus or reconnection while preserving expanded folders and scroll position.
+- Workspace saves are tracked independently. Retried saves recognize already-applied operations; genuine conflicts remain available for reconciliation.
+- Cloud access is enforced by authenticated backend checks, not only by interface state.
 
 ## Appearance and accessibility
 
 - Light and dark themes.
+- Compact Profile, About, Feedback, and Backup & restore surfaces.
 - Keyboard-accessible dialogs with focus movement, trapping, Escape dismissal, and restoration.
 - Narrow layouts designed for popup and native side-panel widths.
-- Long content wraps rather than relying on horizontal scrolling.
+- Long content wraps instead of relying on horizontal scrolling.
+- Decorative entrance, hover, and bounce effects are removed; functional progress indicators remain.
 
 ## Support and legal surfaces
 
@@ -90,14 +100,15 @@ Every account has a personal/home workspace and may participate in other workspa
 - Public Support Center with safe troubleshooting guidance.
 - Public Privacy Policy and Terms of Service.
 - Uninstall guidance and a public changelog.
+- Verified yDirect Google sign-in branding and `support@ydirect.tech` contact identity.
 
 ## Safety boundaries
 
 yDirect is not designed to store:
 
 - passwords or one-time codes;
+- real API keys, private keys, recovery codes, or signing material;
 - payment-card or banking information;
-- private keys, recovery codes, or signing material;
 - regulated health, identity, or customer records;
 - any data whose exposure would create serious harm.
 

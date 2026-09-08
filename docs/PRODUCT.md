@@ -2,19 +2,17 @@
 
 ## Product
 
-**yDirect — Smart Snippet Manager**
-
-**Promise:** Save once. Reuse in seconds.
-
-**Category:** Chrome productivity extension / reusable-text workspace
-
-**Availability:** `1.3.1` is published and free; `1.3.2` is release-ready for the same Chrome Web Store listing
+**Product:** yDirect<br>
+**Store name:** yDirect - Snippet Manager: Save, Search & Copy Reusable Text<br>
+**Promise:** Your reusable text. Right beside your work.<br>
+**Category:** Chrome productivity extension / reusable-text workspace<br>
+**Availability:** Version `1.3.3` is published and free on the Chrome Web Store
 
 ## The problem
 
-People repeat useful text across email, support tools, forms, documents, social platforms, issue trackers, and internal systems. The content often ends up split between notes, drafts, documents, clipboard history, and memory.
+People repeat useful text across email, support tools, forms, documents, social platforms, issue trackers, and internal systems. That content gets split across notes, drafts, clipboard history, documents, and memory.
 
-That creates four recurring costs:
+This creates four recurring costs:
 
 1. **Time:** finding or rewriting the same message interrupts the real task.
 2. **Consistency:** frequently used answers drift and become incomplete.
@@ -23,19 +21,19 @@ That creates four recurring costs:
 
 ## The product idea
 
-yDirect keeps reusable text in a compact workspace in Chrome's native side panel. The user explicitly opens it from the Chrome toolbar, `Alt+S`, or the optional page shortcut, searches or browses, and copies the needed snippet.
+yDirect keeps reusable text in a compact workspace in Chrome's native side panel. A user explicitly opens it from the toolbar, `Alt+S`, or the optional page shortcut, searches or browses, and copies the needed snippet without leaving the current tab.
 
-The product is intentionally a **snippet manager**, not an automatic page reader, password vault, browsing-history tool, or background text collector.
+The product is intentionally a **snippet manager**, not an automatic page reader, password vault, browsing-history tool, background content collector, or automatic-paste agent.
 
 ## Core value
 
 - **Fast:** common text is available in two clicks or fewer.
-- **Focused:** the workspace opens without moving the user to another app or tab.
+- **Focused:** the workspace opens beside the current page instead of moving the user elsewhere.
 - **Organized:** folders, list view, search, sorting, labels, and metadata keep libraries usable.
-- **Portable:** JSON, encrypted JSON, and Excel imports/exports reduce lock-in.
+- **Portable:** JSON, passphrase-encrypted JSON, and Excel import/export reduce lock-in.
 - **Recoverable:** optional cloud backup keeps the latest and previous successful recovery points.
 - **Selective:** workspace sharing exposes chosen folders or snippets, not an entire personal library.
-- **Understandable:** permissions, roles, backup behavior, and safety limits are documented in plain language.
+- **Understandable:** permissions, roles, backup behavior, and safety limits are documented plainly.
 
 ## Primary audiences
 
@@ -53,7 +51,7 @@ Product descriptions, launch notes, status updates, routine partner messages, an
 
 ### Developers and technical teams
 
-Review phrases, issue templates, commands, checklists, and documentation fragments that do not contain secrets.
+Review phrases, issue templates, commands, checklists, schemas, and documentation fragments that do not contain real secrets.
 
 ### Creators, writers, and students
 
@@ -67,45 +65,47 @@ Prompts, captions, citations, research notes, frequently used links, and repeate
 - When content matters, let me export it in a restorable or readable format.
 - When I want recovery, let me enable a limited cloud backup deliberately.
 - When I collaborate, let me share the minimum resource another person needs.
-- When I inspect an extension permission, explain exactly why it exists.
+- When I inspect an extension permission, explain why it exists.
 
 ## Typical workflow
 
-1. Sign in with email or Google.
-2. Create a folder for a workflow, such as Support, Recruiting, Launch, or Personal.
-3. Save a label and reusable text as a snippet.
-4. Open yDirect from the toolbar or `Alt+S` on a supported page.
+1. Sign in with Google or create an email/password account.
+2. Create a folder for a workflow such as Support, Recruiting, Launch, Development, or Personal.
+3. Save a label and reusable value as a snippet.
+4. Open yDirect from the toolbar or `Alt+S`.
 5. Search or browse and copy the snippet.
-6. Paste it into the current task and edit the final message for context.
+6. Paste it where needed and adapt it to the current context.
 7. Export, back up, or selectively share when appropriate.
 
 ## Differentiation
 
-yDirect combines a compact, on-demand native side panel with local-first storage, explicit portability, optional recovery, and scoped collaboration. It does not require persistent access to every website to provide its primary copy workflow.
+yDirect combines an on-demand native side panel with local-first access, explicit portability, optional recovery, and scoped collaboration. Its primary copy workflow does not need persistent access to every website.
 
-The product emphasizes **deliberate access** and **selective sharing** over automatic content capture.
+The product emphasizes **deliberate access**, **user-controlled paste**, and **selective sharing** over automatic content capture.
 
 ## Product principles
 
 1. **User gesture first:** page access follows an explicit toolbar or shortcut action.
-2. **Local-first default:** ordinary snippet work remains available in Chrome storage.
-3. **Cloud is optional:** backup is a user-enabled recovery feature, not a hidden prerequisite.
+2. **Local-first working copy:** ordinary snippet work uses account-separated Chrome storage.
+3. **Cloud is explicit:** workspace services and optional backup are described separately and accurately.
 4. **Least necessary sharing:** access follows the selected resource.
 5. **Server authorization:** hidden buttons are not security boundaries; cloud permissions are enforced on the backend.
 6. **Portability over lock-in:** users can create local exports.
-7. **Truthful scope:** masking is not called encryption, backup is not called archival storage, and yDirect is not called a password manager.
-8. **Private implementation, public accountability:** production source remains private while product behavior, permissions, architecture, ownership, and support paths are documented publicly.
+7. **Truthful scope:** masking is not encryption, backup is not archival storage, and yDirect is not a password manager.
+8. **Private implementation, public accountability:** source remains private while behavior, permissions, architecture, ownership, and support paths are documented publicly.
 
-## Current scope
+## Current release
 
-Version `1.3.2` retains snippet organization, copy workflows, local account separation, imports/exports, optional cloud backup, verified-account workspaces, scoped sharing, themes, accessible dialogs, account management, and public support/legal pages while moving the main workspace to Chrome's native side panel and improving sign-in and transactional-email reliability.
+Version `1.3.3`, published September 8, 2026, retains the native side-panel library, account-separated local data, portability, optional cloud backup, verified-account workspaces, scoped sharing, themes, accessible dialogs, account management, and public support/legal pages.
 
-It has no subscriptions, payments, advertising, or paid features.
+The release improves returning-user startup, delayed background authentication loading, conflict-safe workspace saves, sharing confirmation and refresh, compact account/settings surfaces, and sign-in-method clarity. It adds no Chrome permissions.
+
+yDirect has no subscriptions, payments, advertising, or paid features in the `1.3.x` line.
 
 ## Ownership
 
 yDirect is created, owned, and maintained by **Abhay Yemekar**.
 
-- Owner contact: [abhay.yemekar@ydirect.tech](mailto:abhay.yemekar@ydirect.tech)
+- Owner: [abhay.yemekar@ydirect.tech](mailto:abhay.yemekar@ydirect.tech)
 - Product support: [support@ydirect.tech](mailto:support@ydirect.tech)
 - GitHub: [abhay-yemekar](https://github.com/abhay-yemekar)

@@ -1,0 +1,119 @@
+name: Showcase quality
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: showcase-quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  integrity:
+    name: Public docs and media integrity
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Verify showcase boundary and local links
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $required = @(
+            'README.md',
+            'LICENSE',
+            'NOTICE.md',
+            'SECURITY.md',
+            'CONTRIBUTING.md',
+            'CODE_OF_CONDUCT.md',
+            'CHANGELOG.md',
+            'ROADMAP.md',
+            'docs/PRODUCT.md',
+            'docs/FEATURES.md',
+            'docs/INSTALLATION.md',
+            'docs/ARCHITECTURE.md',
+            'docs/PRIVACY-AND-PERMISSIONS.md',
+            'docs/MEDIA-KIT.md',
+            'docs/ASSET-PROVENANCE.md',
+            'assets/demo/ydirect-demo.gif',
+            'assets/demo/ydirect-demo.mp4',
+            'assets/demo/ydirect-product-tour.webm'
+          )
+
+          $missing = $required | Where-Object { -not (Test-Path -LiteralPath $_) }
+          if ($missing) {
+            throw "Required public files are missing: $($missing -join ', ')"
+          }
+
+          $tracked = @(git ls-files)
+          $localOnly = @('docs/RESUME-LINKEDIN.md', 'docs/LAUNCH-CHECKLIST.md')
+          $leakedLocal = $localOnly | Where-Object { $tracked -contains $_ }
+          if ($leakedLocal) {
+            throw "Local-only documents must not be tracked: $($leakedLocal -join ', ')"
+          }
+
+          $forbiddenExtensions = @(
+            '.crx', '.zip', '.pem', '.key', '.p12',
+            '.js', '.mjs', '.cjs', '.ts', '.tsx', '.jsx',
+            '.html', '.css', '.map', '.xlsx', '.csv'
+          )
+          $forbiddenFiles = $tracked | Where-Object {
+            $extension = [IO.Path]::GetExtension($_).ToLowerInvariant()
+            $forbiddenExtensions -contains $extension
+          }
+          if ($forbiddenFiles) {
+            throw "Unexpected source, package, key, or user-data files: $($forbiddenFiles -join ', ')"
+          }
+
+          $screenshots = @($tracked | Where-Object { $_ -match '^assets/screenshots/\d{2}-.+-1280x800\.png$' })
+          if ($screenshots.Count -ne 5) {
+            throw "Expected five numbered 1280x800 screenshots; found $($screenshots.Count)."
+          }
+
+          $broken = [Collections.Generic.List[string]]::new()
+          foreach ($markdown in ($tracked | Where-Object { $_ -like '*.md' })) {
+            $content = Get-Content -LiteralPath $markdown -Raw
+            $targets = @()
+            foreach ($match in [regex]::Matches($content, '!?(?:\[[^\]]*\])\((?<target>[^)]+)\)')) {
+              $targets += $match.Groups['target'].Value.Trim()
+            }
+            foreach ($match in [regex]::Matches($content, '(?:src|href)="(?<target>[^"]+)"')) {
+              $targets += $match.Groups['target'].Value.Trim()
+            }
+            foreach ($targetValue in $targets) {
+              $target = $targetValue
+              if ($target.StartsWith('<') -and $target.EndsWith('>')) {
+                $target = $target.Substring(1, $target.Length - 2)
+              }
+              if ($target -match '^(https?://|mailto:|#)') { continue }
+              $target = ($target -split '#', 2)[0]
+              if ([string]::IsNullOrWhiteSpace($target)) { continue }
+
+              $base = Split-Path -Parent $markdown
+              if ([string]::IsNullOrWhiteSpace($base)) { $base = '.' }
+              $candidate = Join-Path $base ([Uri]::UnescapeDataString($target))
+              if (-not (Test-Path -LiteralPath $candidate)) {
+                $broken.Add("$markdown -> $target")
+              }
+            }
+          }
+
+          if ($broken.Count -gt 0) {
+            throw "Broken local Markdown links:`n$($broken -join "`n")"
+          }
+
+          $trailingWhitespace = @(git grep -n -I -E '[[:blank:]]+$' -- '*.md' '*.yml' '*.yaml' '*.cff' 2>$null)
+          $global:LASTEXITCODE = 0
+          if ($trailingWhitespace) {
+            throw "Trailing whitespace found:`n$($trailingWhitespace -join "`n")"
+          }
+
+          Write-Host "Verified $($tracked.Count) tracked files, five screenshots, public/private boundaries, and local Markdown links."

@@ -8,9 +8,10 @@ Describe the public documentation, accessibility, translation, or approved-media
 
 ## Verification
 
-- [ ] I used only synthetic/non-sensitive examples.
+- [ ] I used only synthetic, placeholder, or otherwise approved non-sensitive examples.
 - [ ] I did not add production source, packages, credentials, tokens, user data, or private operational details.
-- [ ] Links and image paths work.
+- [ ] Local links and image paths work.
 - [ ] Images have meaningful alternative text where used in Markdown.
-- [ ] Product claims clearly distinguish the published version from a submitted or release-ready update.
+- [ ] Product/version claims match the current public Chrome Web Store state.
+- [ ] Security, privacy, backup, and masking claims retain their documented boundaries.
 - [ ] I have the right to contribute this material under CC BY 4.0.

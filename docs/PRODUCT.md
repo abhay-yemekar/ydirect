@@ -6,7 +6,7 @@
 **Store name:** yDirect - Snippet Manager: Save, Search & Copy Reusable Text<br>
 **Promise:** Your reusable text. Right beside your work.<br>
 **Category:** Chrome productivity extension / reusable-text workspace<br>
-**Availability:** Version `1.3.3` is published and free on the Chrome Web Store
+**Availability:** Version `1.3.4` is published and free on the Chrome Web Store
 
 ## The problem
 
@@ -27,7 +27,7 @@ The product is intentionally a **snippet manager**, not an automatic page reader
 
 ## Core value
 
-- **Fast:** common text is available in two clicks or fewer.
+- **Fast:** `Alt+S` (`Option+S` on a Mac) opens the library, and one click copies.
 - **Focused:** the workspace opens beside the current page instead of moving the user elsewhere.
 - **Organized:** folders, list view, search, sorting, labels, and metadata keep libraries usable.
 - **Portable:** JSON, passphrase-encrypted JSON, and Excel import/export reduce lock-in.
@@ -79,14 +79,14 @@ Prompts, captions, citations, research notes, frequently used links, and repeate
 
 ## Differentiation
 
-yDirect combines an on-demand native side panel with local-first access, explicit portability, optional recovery, and scoped collaboration. Its primary copy workflow does not need persistent access to every website.
+yDirect combines an on-demand native side panel with an on-device library synced to the user's account, explicit portability, optional recovery, and scoped collaboration. Its primary copy workflow does not need persistent access to every website.
 
 The product emphasizes **deliberate access**, **user-controlled paste**, and **selective sharing** over automatic content capture.
 
 ## Product principles
 
 1. **User gesture first:** page access follows an explicit toolbar or shortcut action.
-2. **Local-first working copy:** ordinary snippet work uses account-separated Chrome storage.
+2. **On-device working copy:** ordinary snippet work uses account-separated Chrome storage, synced to the user's account.
 3. **Cloud is explicit:** workspace services and optional backup are described separately and accurately.
 4. **Least necessary sharing:** access follows the selected resource.
 5. **Server authorization:** hidden buttons are not security boundaries; cloud permissions are enforced on the backend.
@@ -96,7 +96,7 @@ The product emphasizes **deliberate access**, **user-controlled paste**, and **s
 
 ## Current release
 
-Version `1.3.3`, published September 8, 2026, retains the native side-panel library, account-separated local data, portability, optional cloud backup, verified-account workspaces, scoped sharing, themes, accessible dialogs, account management, and public support/legal pages.
+Version `1.3.4`, published October 20, 2026, adds Rate & feedback, visible snippet text by default, a one-time weekly-backup offer, and outage-resilient cloud handling, and retains the native side-panel library, account-separated local data, portability, optional cloud backup, verified-account workspaces, scoped sharing, themes, accessible dialogs, account management, and public support/legal pages.
 
 The release improves returning-user startup, delayed background authentication loading, conflict-safe workspace saves, sharing confirmation and refresh, compact account/settings surfaces, and sign-in-method clarity. It adds no Chrome permissions.
 

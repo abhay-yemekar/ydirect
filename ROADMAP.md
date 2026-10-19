@@ -5,14 +5,15 @@ This roadmap communicates product direction, not guaranteed dates. Priorities ma
 ## Shipped — foundation and public launch
 
 - [x] Manifest V3 identity and permanent Chrome Web Store item ID
-- [x] Account sign-in, local-first library, folders, search, and one-click copy
+- [x] Account sign-in, synced on-device library, folders, search, and one-click copy
 - [x] JSON, passphrase-encrypted JSON, and Excel portability
 - [x] Optional cloud backup with latest and previous recovery points
 - [x] Verified-account workspace roles and selective folder/snippet sharing
 - [x] Public privacy, terms, support, uninstall, and changelog pages
 - [x] Native side-panel migration and broad page-compatibility verification in `1.3.2`
 - [x] Returning-user startup, worker authentication, workspace conflict, sharing, and compact-UI improvements in `1.3.3`
-- [x] Chrome Web Store approval and public publishing through `1.3.3`
+- [x] Cloud-outage resilience, Rate & feedback, visible-by-default snippet text, and platform-aware shortcut labels in `1.3.4`
+- [x] Chrome Web Store approval and public publishing through `1.3.4`
 - [x] Current Store screenshots, promotional tiles, demo media, and public product documentation
 
 ## Now — adoption and confidence

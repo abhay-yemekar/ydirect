@@ -2,15 +2,15 @@
 
 This page is a plain-language product explanation, not a replacement for the [Privacy Policy](https://inksl-ay.firebaseapp.com/privacy.html) or [Terms of Service](https://inksl-ay.firebaseapp.com/terms.html).
 
-The published `1.3.3` release retains the same eight Chrome permissions and single yDirect Functions host permission used by `1.3.2`; it adds no new permission scope.
+The published `1.3.4` release retains the same eight Chrome permissions and single yDirect Functions host permission used since `1.3.2`; it adds no new permission scope.
 
 ## Privacy model
 
-yDirect is local-first for ordinary snippet work and uses cloud services only for account, optional backup, workspace/sharing, feedback, and related product operations.
+A free yDirect account is required. Each account's library is kept in Chrome storage and synced to that account in yDirect's Firebase project, whose database is hosted in India; server functions, sign-in, and email delivery run in the United States. Cloud services also handle optional backup, workspace sharing, and feedback.
 
 The extension does not sell user data, use it for personalized advertising, collect browsing history, or request persistent permission to read every website.
 
-The yDirect workspace runs in Chrome's native side panel and opens only after the user clicks yDirect, invokes `Alt+S`, or uses the optional page shortcut. A yDirect account is required for the current product.
+The yDirect workspace runs in Chrome's native side panel and opens only after the user clicks yDirect, invokes `Alt+S` (`Option+S` on a Mac), or uses the optional page shortcut.
 
 ## Data categories used by product features
 

@@ -6,7 +6,7 @@ yDirect is a Chrome snippet manager for saving, organizing, searching, copying, 
 
 ## Is yDirect available now?
 
-Yes. Version `1.3.3` was published on September 8, 2026 through the [official Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg).
+Yes. Version `1.3.4` was published on October 20, 2026 through the [official Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg).
 
 ## Is yDirect free?
 
@@ -42,7 +42,7 @@ No. Browsing-history and visited-page-content collection are not part of the pro
 
 ## Where are snippets stored?
 
-Each account has an account-separated working copy in Chrome local storage. Workspace features also use yDirect's cloud service; optional cloud backup is a separate recovery feature.
+Each account has an account-separated working copy in Chrome local storage, synced to the account in yDirect's Firebase project (database in India) so the library follows you to another computer. Optional cloud backup is a separate recovery feature.
 
 ## Is masking the same as encryption?
 

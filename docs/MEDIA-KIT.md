@@ -6,7 +6,7 @@ Approved public facts and assets for portfolios, resumes, LinkedIn, articles, co
 
 - **Product name:** yDirect
 - **Store name:** yDirect - Snippet Manager: Save, Search & Copy Reusable Text
-- **Marketing descriptor:** yDirect — Smart Snippet Manager
+- **Marketing descriptor:** yDirect — Snippet Manager for Chrome
 - **Tagline:** Your reusable text. Right beside your work.
 - **Category:** Chrome productivity extension / reusable-text workspace
 - **Owner:** Abhay Yemekar

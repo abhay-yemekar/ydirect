@@ -1,6 +1,6 @@
 # Feature guide
 
-This guide describes user-visible behavior in yDirect `1.3.3`, published September 8, 2026.
+This guide describes user-visible behavior in yDirect `1.3.4`, published October 20, 2026.
 
 ## Snippet library
 
@@ -9,14 +9,14 @@ This guide describes user-visible behavior in yDirect `1.3.3`, published Septemb
 - Search the signed-in library and sort content.
 - Use timestamps and copy counts as lightweight context.
 - Copy a selected snippet with one action.
-- Copy the last-used snippet again with `Alt+C`.
-- Optionally mask displayed snippet values to reduce casual shoulder-surfing.
+- Copy the last-used snippet again with `Alt+C` (`Option+C` on a Mac).
+- Snippet text is visible by default; optionally mask displayed values to reduce casual shoulder-surfing.
 
 Masking changes what is visible on screen. It does not encrypt stored content and must not be treated as protection for high-risk secrets.
 
 ## Native side panel
 
-- Open yDirect from the Chrome toolbar or `Alt+S`.
+- Open yDirect from the Chrome toolbar or `Alt+S` (`Option+S` on a Mac).
 - Use the responsive workspace in Chrome's browser-owned native side panel.
 - Keep the current page visible while browsing the library.
 - On supported `http://` and `https://` pages, use the optional draggable shortcut to open the same side panel.

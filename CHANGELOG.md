@@ -2,6 +2,22 @@
 
 This public changelog summarizes user-visible product milestones. It does not expose private implementation details or replace the release history in the private source repository.
 
+## 1.3.4 — published October 20, 2026
+
+Resilience and clarity update published through yDirect's permanent Chrome Web Store listing.
+
+### Highlights
+
+- Kept local snippets usable when yDirect's cloud is unavailable, replaced technical errors with plain explanations, and made automatic backups retry with growing gaps (1 hour up to 1 day).
+- Added Rate & feedback: a link to rate yDirect on the Chrome Web Store and a private problem-report form whose star rating is optional. yDirect asks once, after 25 copies over at least a week.
+- Made snippet text visible by default; masking is still one click away, and existing users keep their setting.
+- Offered weekly backups once, when a library reaches 10 snippets and automatic backup is off.
+- Listed keyboard shortcuts on the About page as Chrome assigned them, written for each computer (`Option+S` on a Mac), with a link to change them.
+- Made background sync check for changes before downloading workspaces.
+- Clarified log-out, local-data and first-folder wording, and replaced a sort icon that looked like a filter.
+- Renamed the Store listing around AI prompts, canned replies and text templates, and published a new five-image gallery.
+- Added no new Chrome permissions.
+
 ## 1.3.3 — published September 8, 2026
 
 Reliability, clarity, and Store-presentation update published through yDirect's permanent Chrome Web Store listing.

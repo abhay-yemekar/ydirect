@@ -1,6 +1,6 @@
 # Architecture overview
 
-This document explains the public system design of yDirect `1.3.3`. It intentionally omits production source, deployment secrets, private identifiers beyond the public Chrome Web Store item ID, operational runbooks, and exploitable control details.
+This document explains the public system design of yDirect `1.3.4`. It intentionally omits production source, deployment secrets, private identifiers beyond the public Chrome Web Store item ID, operational runbooks, and exploitable control details.
 
 ## System view
 
@@ -110,7 +110,7 @@ Marketing email is not part of the `1.3.x` release line.
 | `sidePanel` | Browser-owned workspace surface separate from website DOM and policy rules |
 | `activeTab` + `scripting` | Install or health-check only the optional shortcut on a user-activated supported page |
 | `offscreen` | Support user-initiated Google sign-in without Chrome's `identity` permission |
-| Chrome local storage | Fast local-first snippet access with account separation |
+| Chrome local storage | Fast on-device snippet access with account separation, synced to the account |
 | Firebase Authentication | Email and Google identity with verified-account workflows |
 | Firebase Functions | Authenticated, server-enforced product operations |
 | Cloud Firestore | Structured workspace, recovery, and operational data with retention controls |

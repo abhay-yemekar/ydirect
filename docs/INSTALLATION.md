@@ -2,7 +2,7 @@
 
 ## Current availability
 
-yDirect `1.3.3` is published and free on the official [Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg). It requires Google Chrome `116` or newer.
+yDirect `1.3.4` is published and free on the official [Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg). It requires Google Chrome `116` or newer.
 
 This public repository contains documentation and approved media only. It does not distribute source code, an unpacked build, ZIP, or CRX package.
 
@@ -13,7 +13,7 @@ This public repository contains documentation and approved media only. It does n
 3. Review Chrome's permission summary and choose **Add extension**.
 4. Open Chrome's Extensions menu and pin yDirect for convenient access.
 5. Open a normal `http://` or `https://` page.
-6. Click the yDirect toolbar icon or press `Alt+S`.
+6. Click the yDirect toolbar icon or press `Alt+S` (`Option+S` on a Mac).
 
 Only install yDirect from the official Store listing linked here or an official `ydirect.tech` page.
 
@@ -29,12 +29,12 @@ A yDirect account is required. Do not reuse a password from another service.
 
 ## Open and copy
 
-- `Alt+S`: open yDirect's native side panel.
+- `Alt+S`, or `Option+S` on a Mac: open yDirect's native side panel.
 - Toolbar icon: open or restore the side panel.
 - Snippet copy button: copy the selected snippet.
-- `Alt+C`: copy the most recently used snippet again.
+- `Alt+C`, or `Option+C` on a Mac: copy the most recently used snippet again.
 
-Chrome lets users review or change extension shortcuts at `chrome://extensions/shortcuts`. A conflicting browser, extension, or operating-system shortcut may need reassignment.
+Mac keyboards call the Alt key Option (⌥). yDirect's About page shows the shortcuts Chrome assigned, and Chrome lets users review or change them at `chrome://extensions/shortcuts`. A conflicting browser, extension, or operating-system shortcut may need reassignment.
 
 ## Native side panel and protected pages
 

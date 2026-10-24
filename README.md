@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg"><img alt="Install yDirect from the Chrome Web Store" src="https://img.shields.io/badge/Install_from-Chrome_Web_Store-0F9D58?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
-  <img alt="Current version 1.3.3" src="https://img.shields.io/badge/version-1.3.3-2563EB?style=for-the-badge">
+  <img alt="Current version 1.3.4" src="https://img.shields.io/badge/version-1.3.4-2563EB?style=for-the-badge">
   <img alt="Chrome 116 or newer" src="https://img.shields.io/badge/Chrome-116%2B-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white">
   <img alt="Free product" src="https://img.shields.io/badge/price-free-0F766E?style=for-the-badge">
   <img alt="Manifest V3" src="https://img.shields.io/badge/Manifest-V3-7C3AED?style=for-the-badge">
@@ -20,6 +20,7 @@
   <a href="#see-it-in-action">See it in action</a> ·
   <a href="docs/FEATURES.md">Features</a> ·
   <a href="docs/PRIVACY-AND-PERMISSIONS.md">Privacy</a> ·
+  <a href="https://ydirect.tech/">Website</a> ·
   <a href="https://inksl-ay.firebaseapp.com/support.html">Support</a>
 </p>
 
@@ -50,53 +51,54 @@ yDirect turns that repeated text into an on-demand library in Chrome's native si
 
 <table>
   <tr>
-    <td width="50%"><img src="assets/screenshots/01-everyday-reuse-1280x800.png" alt="yDirect folder view containing safe everyday sample snippets"></td>
-    <td width="50%"><img src="assets/screenshots/02-organize-in-folders-1280x800.png" alt="yDirect folder organization view"></td>
+    <td width="50%"><img src="assets/screenshots/01-replies-1280x800.png" alt="A saved sales reply copied from yDirect's side panel and pasted into an email"></td>
+    <td width="50%"><img src="assets/screenshots/02-search-1280x800.png" alt="yDirect search narrowing a folder of prompts as you type"></td>
   </tr>
   <tr>
-    <td align="center"><strong>Keep everyday text close</strong><br>Save once, find it, copy it, keep working.</td>
-    <td align="center"><strong>A place for every snippet</strong><br>Use folders and list view as your library grows.</td>
+    <td align="center"><strong>Stop retyping the same replies</strong><br>Copy a saved reply and paste it into any page.</td>
+    <td align="center"><strong>Find any snippet as you type</strong><br>Search titles and text in every folder.</td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/screenshots/03-prompts-and-replies-1280x800.png" alt="yDirect containing prompts, replies, meeting notes, and a profile bio"></td>
-    <td width="50%"><img src="assets/screenshots/04-developer-examples-1280x800.png" alt="yDirect showing placeholder-only developer examples"></td>
+    <td width="50%"><img src="assets/screenshots/03-shortcut-1280x800.png" alt="Alt+S, or Option+S on a Mac, opens yDirect beside an AI chat with a prompt pasted"></td>
+    <td width="50%"><img src="assets/screenshots/04-masking-1280x800.png" alt="yDirect with snippet text masked while a browser tab is shared"></td>
   </tr>
   <tr>
-    <td align="center"><strong>Prompts, replies, and everyday words</strong><br>Bring repeatable writing into one searchable place.</td>
-    <td align="center"><strong>Reusable technical examples</strong><br>Keep templates and placeholders—not real secrets.</td>
+    <td align="center"><strong>Alt+S opens it. One click copies.</strong><br>Option+S on a Mac. Keep prompts ready for any AI chat.</td>
+    <td align="center"><strong>Sharing your screen? Hide the text.</strong><br>Titles stay readable. Masking is not encryption.</td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="assets/screenshots/05-visual-masking-1280x800.png" alt="yDirect with snippet previews visually masked" width="760">
+  <img src="assets/screenshots/05-backup-1280x800.png" alt="yDirect weekly cloud backup settings beside the encrypted export dialog" width="760">
 </p>
-<p align="center"><strong>Optional visual masking</strong> hides previews from nearby viewers. Masking is not encryption.</p>
+<p align="center"><strong>Back up weekly. Export anytime.</strong> Cloud backup keeps the latest and previous copy; exports cover Excel, JSON, and passphrase-encrypted JSON.</p>
 
 ## Why yDirect
 
 | | Capability | What it gives you |
 | --- | --- | --- |
-| ⚡ | Fast access | Open from the toolbar or `Alt+S`; copy a snippet in two clicks or fewer. |
+| ⚡ | Fast access | Open from the toolbar or `Alt+S` (`Option+S` on a Mac); copy a snippet with one click. |
 | 🗂️ | Organized library | Folder and list views, search, sorting, timestamps, labels, and copy counts. |
-| 📋 | Reliable copying | One-click copy plus `Alt+C` to reuse the most recently copied snippet. |
-| 💾 | Local-first workflow | Keep an account-separated local copy of the working library in Chrome. |
+| 📋 | Reliable copying | One-click copy plus `Alt+C` (`Option+C` on a Mac) to reuse the most recently copied snippet. |
+| 💾 | On your device and in your account | Your library is kept in Chrome and synced to your free yDirect account, so it follows you to another computer. |
 | 🔐 | Portable data | Import and export JSON, passphrase-encrypted JSON, and Excel files. |
-| ☁️ | Optional recovery | Enable cloud backup deliberately; retain the latest and previous recovery point. |
+| ☁️ | Optional recovery | Turn on daily, weekly, or monthly cloud backup; keep the latest and previous recovery point. |
 | 🤝 | Selective collaboration | Share chosen folders or snippets with verified yDirect accounts and role-based access. |
 | 🌓 | Focused interface | Native side panel, compact account/settings views, light and dark themes, and keyboard-accessible dialogs. |
 
 Read the [complete feature guide](docs/FEATURES.md), including role behavior, backup limits, and safety boundaries.
 
-## What's new in 1.3.3
+## What's new in 1.3.4
 
-Published on September 8, 2026, version `1.3.3` focuses on reliability and clarity:
+Published on October 20, 2026, version `1.3.4` focuses on resilience and clarity:
 
-- improved returning-user startup and fixed delayed authentication loading for automatic backups;
-- made workspace saves and retries conflict-safe while preserving genuine conflicts for reconciliation;
-- confirmed sharing changes before closing and refreshed shared content in visible panels;
-- compacted Profile, About, Feedback, and Settings panels;
-- clarified sign-in method status and removed decorative bounce effects;
-- retained the same eight Chrome permissions and single yDirect Functions host permission.
+- keeps snippets usable when yDirect's cloud is unavailable, with plain explanations instead of technical errors and backups that retry with growing gaps;
+- adds **Rate & feedback**: rate yDirect on the Chrome Web Store or send a private problem report, with an optional star rating;
+- shows snippet text by default; masking is one click away, and existing users keep their setting;
+- offers weekly backups once, when a library reaches 10 snippets;
+- lists keyboard shortcuts on the About page as each computer names them, such as `Option+S` on a Mac;
+- checks for changes before downloading workspaces, so background sync uses less data;
+- retains the same eight Chrome permissions and single yDirect Functions host permission.
 
 See the public [changelog](CHANGELOG.md) for the full release summary.
 
@@ -104,10 +106,10 @@ See the public [changelog](CHANGELOG.md) for the full release summary.
 
 1. Open the [official yDirect Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg).
 2. Select **Add to Chrome**, review the permission summary, and confirm.
-3. Pin yDirect, then click its toolbar icon or press `Alt+S` to open the side panel.
+3. Pin yDirect, then click its toolbar icon or press `Alt+S` (`Option+S` on a Mac) to open the side panel.
 4. Sign in with Google or create an email/password account, then add your first folder and snippet.
 
-Chrome `116` or newer is required. The core copy workflow requires a yDirect account. No unsigned package or source-based installation is distributed here. See [Installation](docs/INSTALLATION.md) for shortcuts, protected-page behavior, backup setup, and troubleshooting.
+Chrome `116` or newer is required. A free yDirect account is required. No unsigned package or source-based installation is distributed here. See [Installation](docs/INSTALLATION.md) for shortcuts, protected-page behavior, backup setup, and troubleshooting.
 
 ## How it works
 
@@ -127,6 +129,7 @@ The browser page never receives your library. yDirect runs in Chrome's browser-o
 
 - No advertising, sale of user data, browsing-history collection, or personalized ads.
 - No persistent permission to read every website.
+- Your library is stored in Chrome and synced to your account in yDirect's Firebase project, whose database is in India.
 - Automatic cloud backup is off until the user enables it.
 - Workspace features use authenticated, server-authorized requests.
 - Exports start only when the user chooses an export action.
@@ -166,9 +169,10 @@ This is an architectural view, not published implementation. Read [Architecture]
 
 | Item | Status |
 | --- | --- |
-| Published version | `1.3.3` — published September 8, 2026 |
+| Published version | `1.3.4` — published October 20, 2026 |
 | Price | Free; no subscriptions, payments, advertising, or paid features in `1.3.x` |
 | Platform | Google Chrome `116+`, Manifest V3 |
+| Website | [ydirect.tech](https://ydirect.tech/) |
 | Chrome Web Store | [Install from the official listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg) |
 | Permanent item ID | `ehkahipeoahnbfbahlkedgdcjefejihg` |
 | Production source | Private and proprietary |

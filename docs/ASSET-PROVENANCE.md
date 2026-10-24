@@ -13,15 +13,14 @@ This inventory records the public origin and safe-use intent of yDirect's approv
 
 These are original yDirect brand assets approved by owner Abhay Yemekar.
 
-## Version 1.3.3 screenshot set
+## Version 1.3.4 screenshot set
 
-The five numbered `1280×800` PNGs in `assets/screenshots/` were prepared on September 7, 2026 for the `1.3.3` Store listing.
+The five numbered `1280×800` PNGs in `assets/screenshots/` were captured on October 19, 2026 for the `1.3.4` Store listing.
 
-- They use actual owner-provided yDirect UI crops with synthetic or placeholder content.
-- Controls, text, avatars, and product UI were not retouched or AI-generated.
-- Images 1 and 3 use different crops of the same sample library; they are distinct marketing compositions, not five separately captured sessions.
-- The developer examples intentionally use `Example_API_Key` placeholders. They do not market yDirect as a secrets vault.
-- The masking image accurately states that masking is visual and not encryption.
+- Each shows the real yDirect 1.3.4 side panel, loaded in Chrome with made-up sample data (people such as "Priya" and "Alex", `example.com` addresses), beside a generic page on an `example.com` site. No real user data, accounts, or third-party product designs appear.
+- The panel UI was not retouched or AI-generated. The surrounding browser frame and pages are simple illustrations.
+- The masking image states that masking is visual and not encryption.
+- No image presents yDirect as a place for passwords or API keys.
 
 ## Demo media
 

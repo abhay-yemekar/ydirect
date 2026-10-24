@@ -21,7 +21,7 @@
   <a href="docs/FEATURES.md">Features</a> ·
   <a href="docs/PRIVACY-AND-PERMISSIONS.md">Privacy</a> ·
   <a href="https://ydirect.tech/">Website</a> ·
-  <a href="https://inksl-ay.firebaseapp.com/support.html">Support</a>
+  <a href="https://ydirect.tech/support">Support</a>
 </p>
 
 > [!IMPORTANT]
@@ -130,7 +130,7 @@ The browser page never receives your library. yDirect runs in Chrome's browser-o
 - No advertising, sale of user data, browsing-history collection, or personalized ads.
 - No persistent permission to read every website.
 - Your library is stored in Chrome and synced to your account in yDirect's Firebase project, whose database is in India.
-- Snippets are encrypted in transit and at rest by Google Cloud. They are not end-to-end encrypted: yDirect's servers can read snippet text to sync, share, and back it up. People can read it only in the cases the [Privacy Policy](https://inksl-ay.firebaseapp.com/privacy.html) lists.
+- Snippets are encrypted in transit and at rest by Google Cloud. They are not end-to-end encrypted: yDirect's servers can read snippet text to sync, share, and back it up. People can read it only in the cases the [Privacy Policy](https://ydirect.tech/privacy) lists.
 - Automatic cloud backup is off until the user enables it.
 - Workspace features use authenticated, server-authorized requests.
 - Exports start only when the user chooses an export action.
@@ -139,7 +139,7 @@ The browser page never receives your library. yDirect runs in Chrome's browser-o
 > [!WARNING]
 > yDirect is not a password manager. Do not store passwords, real API keys, private keys, recovery codes, payment-card data, or other highly sensitive secrets as ordinary snippets.
 
-[Privacy Policy](https://inksl-ay.firebaseapp.com/privacy.html) · [Terms of Service](https://inksl-ay.firebaseapp.com/terms.html) · [Permission-by-permission explanation](docs/PRIVACY-AND-PERMISSIONS.md)
+[Privacy Policy](https://ydirect.tech/privacy) · [Terms of Service](https://ydirect.tech/terms) · [Permission-by-permission explanation](docs/PRIVACY-AND-PERMISSIONS.md)
 
 ## Technology
 
@@ -205,7 +205,7 @@ This is an architectural view, not published implementation. Read [Architecture]
 
 ## Feedback and support
 
-Ideas and reproducible non-sensitive product feedback are welcome through [GitHub Issues](https://github.com/abhay-yemekar/ydirect/issues). For help, use the [Support Center](https://inksl-ay.firebaseapp.com/support.html). Report vulnerabilities privately through [SECURITY.md](SECURITY.md).
+Ideas and reproducible non-sensitive product feedback are welcome through [GitHub Issues](https://github.com/abhay-yemekar/ydirect/issues). For help, use the [Support Center](https://ydirect.tech/support). Report vulnerabilities privately through [SECURITY.md](SECURITY.md).
 
 If something is missing or confusing, [open an issue](https://github.com/abhay-yemekar/ydirect/issues/new/choose). If yDirect saves you time, a rating on the [Chrome Web Store](https://chromewebstore.google.com/detail/ehkahipeoahnbfbahlkedgdcjefejihg) helps other people find it.
 

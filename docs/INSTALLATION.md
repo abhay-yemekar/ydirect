@@ -94,6 +94,6 @@ Cloud backup keeps the latest and one previous successful recovery point. It is 
 
 ## Get help
 
-Visit the [yDirect Support Center](https://inksl-ay.firebaseapp.com/support.html) or email [support@ydirect.tech](mailto:support@ydirect.tech?subject=yDirect%20Support%20Request).
+Visit the [yDirect Support Center](https://ydirect.tech/support) or email [support@ydirect.tech](mailto:support@ydirect.tech?subject=yDirect%20Support%20Request).
 
 Include the yDirect version, Chrome version, operating system, affected surface, and safe reproduction steps. Hide personal and snippet information in screenshots. Never send passwords, codes, reset links, tokens, or sensitive content.

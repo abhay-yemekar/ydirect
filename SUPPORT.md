@@ -2,7 +2,7 @@
 
 ## Product help
 
-Start with the public [yDirect Support Center](https://inksl-ay.firebaseapp.com/support.html) for account access, verification, workspace sharing, shortcuts, backup, import/export, and safe troubleshooting.
+Start with the public [yDirect Support Center](https://ydirect.tech/support) for account access, verification, workspace sharing, shortcuts, backup, import/export, and safe troubleshooting.
 
 If the issue remains, email [support@ydirect.tech](mailto:support@ydirect.tech?subject=yDirect%20Support%20Request). We aim to respond within two business days.
 

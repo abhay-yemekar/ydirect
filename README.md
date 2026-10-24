@@ -130,6 +130,7 @@ The browser page never receives your library. yDirect runs in Chrome's browser-o
 - No advertising, sale of user data, browsing-history collection, or personalized ads.
 - No persistent permission to read every website.
 - Your library is stored in Chrome and synced to your account in yDirect's Firebase project, whose database is in India.
+- Snippets are encrypted in transit and at rest by Google Cloud. They are not end-to-end encrypted: yDirect's servers can read snippet text to sync, share, and back it up. People can read it only in the cases the [Privacy Policy](https://inksl-ay.firebaseapp.com/privacy.html) lists.
 - Automatic cloud backup is off until the user enables it.
 - Workspace features use authenticated, server-authorized requests.
 - Exports start only when the user chooses an export action.
@@ -206,7 +207,7 @@ This is an architectural view, not published implementation. Read [Architecture]
 
 Ideas and reproducible non-sensitive product feedback are welcome through [GitHub Issues](https://github.com/abhay-yemekar/ydirect/issues). For help, use the [Support Center](https://inksl-ay.firebaseapp.com/support.html). Report vulnerabilities privately through [SECURITY.md](SECURITY.md).
 
-If yDirect saves you time—or the product engineering behind it is useful to study—please **star this repository**. It helps an independent product reach more people who are tired of rewriting the same text.
+If something is missing or confusing, [open an issue](https://github.com/abhay-yemekar/ydirect/issues/new/choose). If yDirect saves you time, a rating on the [Chrome Web Store](https://chromewebstore.google.com/detail/ehkahipeoahnbfbahlkedgdcjefejihg) helps other people find it.
 
 ## Owner
 

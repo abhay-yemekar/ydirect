@@ -8,6 +8,8 @@ The published `1.3.4` release retains the same eight Chrome permissions and sing
 
 A free yDirect account is required. Each account's library is kept in Chrome storage and synced to that account in yDirect's Firebase project, whose database is hosted in India; server functions, sign-in, and email delivery run in the United States. Cloud services also handle optional backup, workspace sharing, and feedback.
 
+Snippets are encrypted in transit and at rest by Google Cloud. They are not end-to-end encrypted: yDirect's servers can read snippet text to sync, share, and back it up. People can read it only in the cases the [Privacy Policy](https://inksl-ay.firebaseapp.com/privacy.html) lists. Anyone you share a folder or snippet with can read what you share.
+
 The extension does not sell user data, use it for personalized advertising, collect browsing history, or request persistent permission to read every website.
 
 The yDirect workspace runs in Chrome's native side panel and opens only after the user clicks yDirect, invokes `Alt+S` (`Option+S` on a Mac), or uses the optional page shortcut.

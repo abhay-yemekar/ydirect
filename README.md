@@ -150,9 +150,9 @@ The browser page never receives your library. yDirect runs in Chrome's browser-o
 | Identity | Firebase Authentication, Google OAuth, verified email accounts |
 | Backend | Firebase Functions on Node.js 22 |
 | Cloud data | Cloud Firestore with server-enforced authorization and retention rules |
-| Public web | Firebase Hosting for account, support, privacy, terms, uninstall, and changelog pages |
+| Public web | `ydirect.tech` on Cloudflare Pages for the website, support, privacy, and terms; Firebase Hosting for account, uninstall, and changelog pages |
 | Transactional email | Resend with `ydirect.tech` sender identity; Cloudflare Email Routing for public inboxes |
-| Quality | Automated data, UI, lifecycle, permissions, policy, package, and documentation checks through GitHub Actions |
+| Quality | Automated data, UI, lifecycle, permissions, policy, package, and documentation checks, plus browser journeys that drive the packaged extension, through GitHub Actions |
 
 ```mermaid
 flowchart TB
@@ -161,7 +161,8 @@ flowchart TB
     X -->|"authenticated HTTPS"| F["Firebase Functions"]
     F --> D["Cloud Firestore"]
     F --> E["Transactional email"]
-    X --> H["Hosted account, support, privacy, and terms pages"]
+    X --> H["ydirect.tech support, privacy, and terms pages"]
+    X --> A["Hosted account pages"]
 ```
 
 This is an architectural view, not published implementation. Read [Architecture](docs/ARCHITECTURE.md) for responsibilities and trust boundaries.

@@ -150,7 +150,7 @@ The browser page never receives your library. yDirect runs in Chrome's browser-o
 | Identity | Firebase Authentication, Google OAuth, verified email accounts |
 | Backend | Firebase Functions on Node.js 22 |
 | Cloud data | Cloud Firestore with server-enforced authorization and retention rules |
-| Public web | `ydirect.tech` on Cloudflare Pages for the website, support, privacy, and terms; Firebase Hosting for account, uninstall, and changelog pages |
+| Public web | `ydirect.tech` on Cloudflare Pages for the website, support, privacy, terms, changelog, and uninstall pages; Firebase Hosting for account pages |
 | Transactional email | Resend with `ydirect.tech` sender identity; Cloudflare Email Routing for public inboxes |
 | Quality | Automated data, UI, lifecycle, permissions, policy, package, and documentation checks, plus browser journeys that drive the packaged extension, through GitHub Actions |
 

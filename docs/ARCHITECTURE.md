@@ -59,7 +59,7 @@ Authorization, payload limits, workspace scope, resource grants, revisions, and 
 ## Email and public web pages
 
 - `ydirect.tech`, on Cloudflare Pages, serves the website and the support, privacy, and terms pages. The older Firebase-hosted addresses for those three pages redirect there.
-- Firebase Hosting serves account, uninstall, and changelog pages.
+- Firebase Hosting serves the account pages: sign-up, email actions, and the Google sign-in helper. Its other addresses, including the changelog and uninstall pages, redirect to `ydirect.tech`.
 - Resend delivers transactional messages such as collaboration notifications and account-operation confirmations.
 - `ydirect.tech` public addresses are routed through Cloudflare Email Routing.
 
@@ -116,8 +116,8 @@ Marketing email is not part of the `1.3.x` release line.
 | Firebase Authentication | Email and Google identity with verified-account workflows |
 | Firebase Functions | Authenticated, server-enforced product operations |
 | Cloud Firestore | Structured workspace, recovery, and operational data with retention controls |
-| Cloudflare Pages | `ydirect.tech` website, support, privacy, and terms pages |
-| Firebase Hosting | HTTPS account, uninstall, and changelog surfaces |
+| Cloudflare Pages | `ydirect.tech` website, support, privacy, terms, changelog, and uninstall pages |
+| Firebase Hosting | HTTPS account pages: sign-up, email actions, and Google sign-in |
 | Resend | Transactional delivery for product events |
 
 ## Availability and recovery

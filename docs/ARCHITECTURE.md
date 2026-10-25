@@ -17,7 +17,8 @@ flowchart TB
     M -->|"Authenticated HTTPS requests"| F["Firebase Functions · Node.js 22"]
     F --> D["Cloud Firestore"]
     F --> R["Resend transactional email"]
-    M --> H["Firebase-hosted account, support, and legal pages"]
+    M --> H["ydirect.tech support and legal pages"]
+    M --> A["Firebase-hosted account pages"]
     R --> C["Verified ydirect.tech sender domain"]
 ```
 
@@ -57,7 +58,8 @@ Authorization, payload limits, workspace scope, resource grants, revisions, and 
 
 ## Email and public web pages
 
-- Firebase Hosting serves account, support, privacy, terms, uninstall, and changelog pages.
+- `ydirect.tech`, on Cloudflare Pages, serves the website and the support, privacy, and terms pages. The older Firebase-hosted addresses for those three pages redirect there.
+- Firebase Hosting serves account, uninstall, and changelog pages.
 - Resend delivers transactional messages such as collaboration notifications and account-operation confirmations.
 - `ydirect.tech` public addresses are routed through Cloudflare Email Routing.
 
@@ -114,7 +116,8 @@ Marketing email is not part of the `1.3.x` release line.
 | Firebase Authentication | Email and Google identity with verified-account workflows |
 | Firebase Functions | Authenticated, server-enforced product operations |
 | Cloud Firestore | Structured workspace, recovery, and operational data with retention controls |
-| Firebase Hosting | HTTPS account, support, privacy, terms, uninstall, and changelog surfaces |
+| Cloudflare Pages | `ydirect.tech` website, support, privacy, and terms pages |
+| Firebase Hosting | HTTPS account, uninstall, and changelog surfaces |
 | Resend | Transactional delivery for product events |
 
 ## Availability and recovery

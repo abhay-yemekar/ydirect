@@ -1,6 +1,6 @@
 # Feature guide
 
-This guide describes user-visible behavior in yDirect `1.3.4`, published October 20, 2026.
+This guide describes user-visible behavior in yDirect `1.3.5`, published PUBLISH_DATE.
 
 ## Snippet library
 

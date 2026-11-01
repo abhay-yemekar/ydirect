@@ -6,7 +6,7 @@ yDirect is a Chrome snippet manager for saving, organizing, searching, copying, 
 
 ## Is yDirect available now?
 
-Yes. Version `1.3.5` was published on PUBLISH_DATE through the [official Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg).
+Yes. Version `1.3.5` was published on November 1, 2026 through the [official Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg).
 
 ## Is yDirect free?
 

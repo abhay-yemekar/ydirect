@@ -96,7 +96,7 @@ The product emphasizes **deliberate access**, **user-controlled paste**, and **s
 
 ## Current release
 
-Version `1.3.5`, published PUBLISH_DATE, moves the backend next to the database, removes the backend host permission, switches to Firebase's extension-safe sign-in library, and shows one calm bar during outages. It retains Rate & feedback, visible snippet text by default, a one-time weekly-backup offer, outage-resilient cloud handling, the native side-panel library, account-separated local data, portability, optional cloud backup, verified-account workspaces, scoped sharing, themes, accessible dialogs, account management, and public support/legal pages.
+Version `1.3.5`, published November 1, 2026, moves the backend next to the database, removes the backend host permission, switches to Firebase's extension-safe sign-in library, and shows one calm bar during outages. It retains Rate & feedback, visible snippet text by default, a one-time weekly-backup offer, outage-resilient cloud handling, the native side-panel library, account-separated local data, portability, optional cloud backup, verified-account workspaces, scoped sharing, themes, accessible dialogs, account management, and public support/legal pages.
 
 The release adds no Chrome permissions and removes one, and existing signed-in users stay signed in after updating.
 

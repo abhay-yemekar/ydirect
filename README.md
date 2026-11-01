@@ -90,7 +90,7 @@ Read the [complete feature guide](docs/FEATURES.md), including role behavior, ba
 
 ## What's new in 1.3.5
 
-Published on PUBLISH_DATE, version `1.3.5` makes yDirect faster and asks for less:
+Published on November 1, 2026, version `1.3.5` makes yDirect faster and asks for less:
 
 - runs yDirect's server functions in Mumbai, next to its database: from India each request takes about 60 ms instead of 360 ms;
 - drops the host permission for yDirect's backend, so yDirect now uses eight Chrome permissions and no host access;
@@ -171,7 +171,7 @@ This is an architectural view, not published implementation. Read [Architecture]
 
 | Item | Status |
 | --- | --- |
-| Published version | `1.3.5` — published PUBLISH_DATE |
+| Published version | `1.3.5` — published November 1, 2026 |
 | Price | Free; no subscriptions, payments, advertising, or paid features in `1.3.x` |
 | Platform | Google Chrome `116+`, Manifest V3 |
 | Website | [ydirect.tech](https://ydirect.tech/) |

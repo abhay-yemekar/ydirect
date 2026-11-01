@@ -2,7 +2,7 @@
 
 This public changelog summarizes user-visible product milestones. It does not expose private implementation details or replace the release history in the private source repository.
 
-## 1.3.5 — published PUBLISH_DATE
+## 1.3.5 — published November 1, 2026
 
 Speed and trust update published through yDirect's permanent Chrome Web Store listing.
 

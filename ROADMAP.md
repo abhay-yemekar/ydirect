@@ -13,7 +13,8 @@ This roadmap communicates product direction, not guaranteed dates. Priorities ma
 - [x] Native side-panel migration and broad page-compatibility verification in `1.3.2`
 - [x] Returning-user startup, worker authentication, workspace conflict, sharing, and compact-UI improvements in `1.3.3`
 - [x] Cloud-outage resilience, Rate & feedback, visible-by-default snippet text, and platform-aware shortcut labels in `1.3.4`
-- [x] Chrome Web Store approval and public publishing through `1.3.4`
+- [x] Backend next to the database, no backend host permission, and Firebase's extension-safe sign-in library in `1.3.5`
+- [x] Chrome Web Store approval and public publishing through `1.3.5`
 - [x] Current Store screenshots, promotional tiles, demo media, and public product documentation
 
 ## Now — adoption and confidence

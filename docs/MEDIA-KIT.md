@@ -31,7 +31,7 @@ yDirect is a snippet manager for Chrome that keeps your library on your device a
 
 | Fact | Detail |
 | --- | --- |
-| Published version | `1.3.4` — October 20, 2026 |
+| Published version | `1.3.5` — November 1, 2026 |
 | Price | Free; no subscriptions, payments, advertising, or paid features in `1.3.x` |
 | Platform | Google Chrome `116+`, Manifest V3 |
 | Store | [Official Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg) |

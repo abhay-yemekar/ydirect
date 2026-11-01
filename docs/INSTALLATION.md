@@ -2,7 +2,7 @@
 
 ## Current availability
 
-yDirect `1.3.4` is published and free on the official [Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg). It requires Google Chrome `116` or newer.
+yDirect `1.3.5` is published and free on the official [Chrome Web Store listing](https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg). It requires Google Chrome `116` or newer.
 
 This public repository contains documentation and approved media only. It does not distribute source code, an unpacked build, ZIP, or CRX package.
 

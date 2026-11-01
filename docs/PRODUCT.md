@@ -6,7 +6,7 @@
 **Store name:** yDirect - Snippet Manager: Save, Search & Copy Reusable Text<br>
 **Promise:** Your reusable text. Right beside your work.<br>
 **Category:** Chrome productivity extension / reusable-text workspace<br>
-**Availability:** Version `1.3.4` is published and free on the Chrome Web Store
+**Availability:** Version `1.3.5` is published and free on the Chrome Web Store
 
 ## The problem
 
@@ -96,9 +96,9 @@ The product emphasizes **deliberate access**, **user-controlled paste**, and **s
 
 ## Current release
 
-Version `1.3.4`, published October 20, 2026, adds Rate & feedback, visible snippet text by default, a one-time weekly-backup offer, and outage-resilient cloud handling, and retains the native side-panel library, account-separated local data, portability, optional cloud backup, verified-account workspaces, scoped sharing, themes, accessible dialogs, account management, and public support/legal pages.
+Version `1.3.5`, published November 1, 2026, moves the backend next to the database, removes the backend host permission, switches to Firebase's extension-safe sign-in library, and shows one calm bar during outages. It retains Rate & feedback, visible snippet text by default, a one-time weekly-backup offer, outage-resilient cloud handling, the native side-panel library, account-separated local data, portability, optional cloud backup, verified-account workspaces, scoped sharing, themes, accessible dialogs, account management, and public support/legal pages.
 
-The release improves returning-user startup, delayed background authentication loading, conflict-safe workspace saves, sharing confirmation and refresh, compact account/settings surfaces, and sign-in-method clarity. It adds no Chrome permissions.
+The release adds no Chrome permissions and removes one, and existing signed-in users stay signed in after updating.
 
 yDirect has no subscriptions, payments, advertising, or paid features in the `1.3.x` line.
 

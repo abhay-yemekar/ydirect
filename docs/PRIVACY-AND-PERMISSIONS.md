@@ -2,11 +2,11 @@
 
 This page is a plain-language product explanation, not a replacement for the [Privacy Policy](https://ydirect.tech/privacy) or [Terms of Service](https://ydirect.tech/terms).
 
-The published `1.3.4` release retains the same eight Chrome permissions and single yDirect Functions host permission used since `1.3.2`; it adds no new permission scope.
+The published `1.3.5` release uses eight Chrome permissions and no host permission. Earlier releases also held a host permission for yDirect's backend; `1.3.5` removed it because the backend accepts requests from the extension directly.
 
 ## Privacy model
 
-A free yDirect account is required. Each account's library is kept in Chrome storage and synced to that account in yDirect's Firebase project, whose database is hosted in India; server functions, sign-in, and email delivery run in the United States. Cloud services also handle optional backup, workspace sharing, and feedback.
+A free yDirect account is required. Each account's library is kept in Chrome storage and synced to that account in yDirect's Firebase project, whose database and server functions run in India; sign-in, hosting, and email delivery run in the United States. Cloud services also handle optional backup, workspace sharing, and feedback.
 
 Snippets are encrypted in transit and at rest by Google Cloud. They are not end-to-end encrypted: yDirect's servers can read snippet text to sync, share, and back it up. People can read it only in the cases the [Privacy Policy](https://ydirect.tech/privacy) lists. Anyone you share a folder or snippet with can read what you share.
 
@@ -40,7 +40,8 @@ Do not store passwords, one-time codes, private keys, recovery codes, payment-ca
 | `sidePanel` | Opens the responsive yDirect workspace in Chrome's browser-owned side panel after a user action | It does not expose the snippet library to the active website |
 | `offscreen` | Supports the user-initiated Google account chooser required by the Manifest V3 authentication flow | yDirect does not request Chrome's `identity` permission |
 | `alarms` | Schedules optional automatic cloud backups at the frequency selected by the user | Automatic backup defaults to off |
-| yDirect Functions origin | Sends authenticated account, workspace, sharing, feedback, and backup requests to the product backend | It is not general access to arbitrary internet hosts |
+
+yDirect reaches its own backend without a Chrome permission. The backend accepts requests only from the yDirect extension and its account pages, and every cloud action is authenticated and checked on the server.
 
 ## Local, cloud, and shared data
 

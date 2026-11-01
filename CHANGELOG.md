@@ -2,6 +2,21 @@
 
 This public changelog summarizes user-visible product milestones. It does not expose private implementation details or replace the release history in the private source repository.
 
+## 1.3.5 — published November 1, 2026
+
+Speed and trust update published through yDirect's permanent Chrome Web Store listing.
+
+### Highlights
+
+- Moved yDirect's server functions to Mumbai, next to the database. From India, each request takes about 60 ms instead of 360 ms.
+- Removed the host permission for yDirect's backend. The backend accepts requests from the extension directly, so Chrome no longer warns about a `cloudfunctions.net` address at install.
+- Switched to Firebase's sign-in library built for Chrome extensions, which never loads code from the web. Signed-in users stay signed in after updating.
+- Showed one "Cloud sync paused" bar during an outage instead of repeated messages, with a check every 20 seconds and automatic recovery.
+- Made restoring a backup or importing a file change only your own workspace; shared workspaces you manage stay as they are.
+- Counted a few product events as anonymous daily totals, with no account ID, snippet text or web addresses.
+- Linked Support, Privacy and Terms to `ydirect.tech`.
+- Added no new Chrome permissions and removed one.
+
 ## 1.3.4 — published October 20, 2026
 
 Resilience and clarity update published through yDirect's permanent Chrome Web Store listing.

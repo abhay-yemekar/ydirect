@@ -1,6 +1,6 @@
 # Architecture overview
 
-This document explains the public system design of yDirect `1.3.4`. It intentionally omits production source, deployment secrets, private identifiers beyond the public Chrome Web Store item ID, operational runbooks, and exploitable control details.
+This document explains the public system design of yDirect `1.3.5`. It intentionally omits production source, deployment secrets, private identifiers beyond the public Chrome Web Store item ID, operational runbooks, and exploitable control details.
 
 ## System view
 
@@ -40,13 +40,13 @@ The application runs in Chrome's browser-owned native side panel, not inside the
 
 ## Identity layer
 
-Firebase Authentication provides email/password accounts and the verified identity used by cloud features. A Manifest V3-compatible Google account chooser uses a short-lived offscreen document and hosted callback helper without requesting Chrome's `identity` permission.
+Firebase Authentication provides email/password accounts and the verified identity used by cloud features. The extension bundles Firebase Authentication's build for Manifest V3 extensions, which loads no code from the web. A Google account chooser uses a short-lived offscreen document and hosted callback helper without requesting Chrome's `identity` permission.
 
 Cloud backup, workspace/sharing, feedback, and account operations require authenticated requests. Protected collaboration actions require a verified email identity. Cached consent can let a returning account access its local copy promptly while the current legal version is revalidated in the background.
 
 ## Serverless backend
 
-Firebase Functions on Node.js 22 handle account, backup, workspace, sharing, feedback, and transactional-notification operations.
+Firebase Functions on Node.js 22, running in Mumbai next to Cloud Firestore, handle account, backup, workspace, sharing, feedback, and transactional-notification operations. They accept requests from the extension's own origin, so the extension needs no host permission to reach them.
 
 The backend is the authorization boundary for cloud data. Client-side visibility or disabled controls are usability behavior, not a substitute for server checks. Idempotent operations distinguish a successful retry from a true workspace revision conflict.
 

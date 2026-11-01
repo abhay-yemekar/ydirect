@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/ydirect-snippet-manager-s/ehkahipeoahnbfbahlkedgdcjefejihg"><img alt="Install yDirect from the Chrome Web Store" src="https://img.shields.io/badge/Install_from-Chrome_Web_Store-0F9D58?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
-  <img alt="Current version 1.3.4" src="https://img.shields.io/badge/version-1.3.4-2563EB?style=for-the-badge">
+  <img alt="Current version 1.3.5" src="https://img.shields.io/badge/version-1.3.5-2563EB?style=for-the-badge">
   <img alt="Chrome 116 or newer" src="https://img.shields.io/badge/Chrome-116%2B-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white">
   <img alt="Free product" src="https://img.shields.io/badge/price-free-0F766E?style=for-the-badge">
   <img alt="Manifest V3" src="https://img.shields.io/badge/Manifest-V3-7C3AED?style=for-the-badge">
@@ -88,17 +88,17 @@ yDirect turns that repeated text into an on-demand library in Chrome's native si
 
 Read the [complete feature guide](docs/FEATURES.md), including role behavior, backup limits, and safety boundaries.
 
-## What's new in 1.3.4
+## What's new in 1.3.5
 
-Published on October 20, 2026, version `1.3.4` focuses on resilience and clarity:
+Published on November 1, 2026, version `1.3.5` makes yDirect faster and asks for less:
 
-- keeps snippets usable when yDirect's cloud is unavailable, with plain explanations instead of technical errors and backups that retry with growing gaps;
-- adds **Rate & feedback**: rate yDirect on the Chrome Web Store or send a private problem report, with an optional star rating;
-- shows snippet text by default; masking is one click away, and existing users keep their setting;
-- offers weekly backups once, when a library reaches 10 snippets;
-- lists keyboard shortcuts on the About page as each computer names them, such as `Option+S` on a Mac;
-- checks for changes before downloading workspaces, so background sync uses less data;
-- retains the same eight Chrome permissions and single yDirect Functions host permission.
+- runs yDirect's server functions in Mumbai, next to its database: from India each request takes about 60 ms instead of 360 ms;
+- drops the host permission for yDirect's backend, so yDirect now uses eight Chrome permissions and no host access;
+- uses Firebase's sign-in library built for Chrome extensions, which never loads code from the web; signed-in users stay signed in after updating;
+- shows one "Cloud sync paused" bar during an outage and resumes on its own;
+- keeps shared workspaces intact when you restore a backup or import a file;
+- counts a few product events as anonymous daily totals, with no account ID, snippet text or web addresses;
+- links Support, Privacy and Terms to `ydirect.tech`.
 
 See the public [changelog](CHANGELOG.md) for the full release summary.
 
@@ -129,7 +129,7 @@ The browser page never receives your library. yDirect runs in Chrome's browser-o
 
 - No advertising, sale of user data, browsing-history collection, or personalized ads.
 - No persistent permission to read every website.
-- Your library is stored in Chrome and synced to your account in yDirect's Firebase project, whose database is in India.
+- Your library is stored in Chrome and synced to your account in yDirect's Firebase project, whose database and server functions are in India.
 - Snippets are encrypted in transit and at rest by Google Cloud. They are not end-to-end encrypted: yDirect's servers can read snippet text to sync, share, and back it up. People can read it only in the cases the [Privacy Policy](https://ydirect.tech/privacy) lists.
 - Automatic cloud backup is off until the user enables it.
 - Workspace features use authenticated, server-authorized requests.
@@ -148,7 +148,7 @@ The browser page never receives your library. yDirect runs in Chrome's browser-o
 | Browser experience | Chrome Extension Manifest V3, JavaScript modules, HTML, CSS, native `sidePanel` |
 | Local data | `chrome.storage.local` with account-separated state |
 | Identity | Firebase Authentication, Google OAuth, verified email accounts |
-| Backend | Firebase Functions on Node.js 22 |
+| Backend | Firebase Functions on Node.js 22, in Mumbai next to the database |
 | Cloud data | Cloud Firestore with server-enforced authorization and retention rules |
 | Public web | `ydirect.tech` on Cloudflare Pages for the website, support, privacy, terms, changelog, and uninstall pages; Firebase Hosting for account pages |
 | Transactional email | Resend with `ydirect.tech` sender identity; Cloudflare Email Routing for public inboxes |
@@ -171,7 +171,7 @@ This is an architectural view, not published implementation. Read [Architecture]
 
 | Item | Status |
 | --- | --- |
-| Published version | `1.3.4` — published October 20, 2026 |
+| Published version | `1.3.5` — published November 1, 2026 |
 | Price | Free; no subscriptions, payments, advertising, or paid features in `1.3.x` |
 | Platform | Google Chrome `116+`, Manifest V3 |
 | Website | [ydirect.tech](https://ydirect.tech/) |
